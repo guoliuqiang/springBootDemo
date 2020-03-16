@@ -1,0 +1,68 @@
+version: '3'                                                                     //版本号
+services:                                                                        //服务，下一级均为服务名
+  tomcatGeo:                                                                   //服务名
+    container_name: Geo                                                      //生成容器名
+    image: "tomcat:Geo"                                                      //生成该容器的镜像名（重构后的镜像）
+    build:                                                                   //构建镜像
+      context: .                                                           //dockerfile来源路径（.代表本路径）
+      dockerfile: Dockerfile.tomcatGeo                                     //指定dockerfile
+    ports:                                                                   //配置端口
+    - "9087:8080"                                                        //映射端口:软件端口（外网通过 ip地址:9087 来访问此tomcat）
+    networks:                                                                //网络名（仅为一个标记，用来保证所有容器运行与同一网络下，保证容器间的互相通信的可行性）
+    - mynet
+
+  tomcatMap:
+    container_name: Map
+    image: "tomcat:Map"
+    build:
+      context: .
+      dockerfile: Dockerfile.tomcatMap
+    ports:
+    - "8888:8080"
+    networks:
+    - mynet
+
+  tomcatWeb:
+    container_name: Web
+    image: "tomcat:Web"
+    build:
+      context: .
+      dockerfile: Dockerfile.tomcatWeb
+    ports:
+    - "8087:8080"
+    networks:
+    - mynet
+      //以上三个tomcat是同一个基础镜像的三个不同的重构
+
+  postgresql:
+    container_name: postgresql
+    image: "postgresql:131"
+    build:
+      context: .
+      dockerfile: Dockerfile.PGsql
+    environment:                                                            //环境参数：帐号密码
+    - POSTGRES_PASSWORD=postgres
+    - POSTGRES_USER=postgres
+    ports:
+    - "5432:5432"
+    networks:
+    - mynet
+
+  mongo:
+    container_name: mongo
+    image: docker_mongo:latest
+    ports:
+    - "27017:27017"
+    networks:
+    - mynet
+
+  mapbox:
+    container_name: mapbox
+    image: container-backup:latest
+    ports:
+    - "9095:80"
+    networks:
+    - mynet
+
+networks:
+  mynet:
