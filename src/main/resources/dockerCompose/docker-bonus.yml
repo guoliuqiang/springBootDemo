@@ -5,8 +5,11 @@ networks:
 
 services:   #服务，下一级均为服务名
   bonus:
-    image: e33a1bb2a8e9
-    container_name: bonus                                                      #生成容器名
+    build:
+      context: /data/belinkwallet/dockerfile
+      dockerfile: docker-bonus
+    tty: true
+    container_name: bonus  #生成容器名
     ports:                                                                   #配置端口
     - "10021:10021"       #映射端口:软件端口
     - "10020:10020"
@@ -17,7 +20,9 @@ services:   #服务，下一级均为服务名
     - mynet
 
   manager:
-    image: 0d076707726b
+    build:
+      context: /data/belinkwallet/dockerfile
+      dockerfile: docker-manager
     tty: true
     container_name: manager
     ports:

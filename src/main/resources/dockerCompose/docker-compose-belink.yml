@@ -78,8 +78,35 @@ services:   #服务，下一级均为服务名
     - mynet
     command: redis-server /etc/redis/redis.conf --appendonly yes
 
+  token:
+    build:
+      context: /data/belinkwallet/dockerfile
+      dockerfile: belink
+    tty: true  #添加控制终端
+    container_name: token
+    ports:
+    - "10010:10010"       #映射端口:软件端口
+    - "10011:10011"
+    - "20010:20010"
+    depends_on: #启动此服务的时候会优先起依赖的服务
+    - redis
+    - zookeeper0
+    - zookeeper1
+    - kafka0
+    - kafka1
+    volumes:
+    - /data/belinkwallet:/data/belinkwallet
+    extra_hosts:
+    - "jmenv.tbsite.net:114.67.126.146"
+    - "dev1:114.67.126.146"
+    networks:
+    - mynet
+
   bonus:
-    image: 37677b95d130
+    build:
+      context: /data/belinkwallet/dockerfile
+      dockerfile: belink
+      tty: true
     container_name: bonus                                                      #生成容器名
     tty: true
     ports:                                                                   #配置端口
@@ -94,19 +121,105 @@ services:   #服务，下一级均为服务名
     - kafka1
     volumes:
     - /data/belinkwallet:/data/belinkwallet
+    extra_hosts:
+    - "jmenv.tbsite.net:114.67.126.146"
+    - "dev1:114.67.126.146"
     networks:           #网络名（仅为一个标记，用来保证所有容器运行与同一网络下，保证容器间的互相通信的可行性）
     - mynet
 
+  business:
+    build:
+      context: /data/belinkwallet/dockerfile
+      dockerfile: belink
+    tty: true  #添加控制终端
+    container_name: business
+    ports:
+    - "10032:10032"       #映射端口:软件端口
+    - "10031:10031"
+    - "20030:20030"
+    depends_on:
+    - redis
+    - zookeeper0
+    - zookeeper1
+    - kafka0
+    - kafka1
+    volumes:
+    - /data/belinkwallet:/data/belinkwallet
+    extra_hosts:
+    - "jmenv.tbsite.net:114.67.126.146"
+    - "dev1:114.67.126.146"
+    networks:
+    - mynet
+
+  statistic:
+    build:
+      context: /data/belinkwallet/dockerfile
+      dockerfile: belink
+    tty: true  #添加控制终端
+    container_name: statistic
+    ports:
+    - "28089:28089"       #映射端口:软件端口
+    - "38090:38090"
+    - "20090:20090"
+    depends_on:
+    - redis
+    - zookeeper0
+    - zookeeper1
+    - kafka0
+    - kafka1
+    volumes:
+    - /data/belinkwallet:/data/belinkwallet
+    extra_hosts:
+    - "jmenv.tbsite.net:114.67.126.146"
+    - "dev1:114.67.126.146"
+    networks:
+    - mynet
+
   manager:
-    image: 37677b95d130
+    build:
+      context: /data/belinkwallet/dockerfile
+      dockerfile: belink
+    tty: true  #添加控制终端
     container_name: manager
-    tty: true
     ports:
     - "28090:28090"       #映射端口:软件端口
     - "18089:18089"
     - "8089:8089"
+    depends_on:
+    - redis
+    - zookeeper0
+    - zookeeper1
+    - kafka0
+    - kafka1
     volumes:
     - /data/belinkwallet:/data/belinkwallet
+    extra_hosts:
+    - "jmenv.tbsite.net:114.67.126.146"
+    - "dev1:114.67.126.146"
+    networks:
+    - mynet
+
+  user:
+    build:
+      context: /data/belinkwallet/dockerfile
+      dockerfile: belink
+    tty: true  #添加控制终端
+    container_name: user
+    ports:
+    - "28088:28088"       #映射端口:软件端口
+    - "18088:18088"
+    - "8088:8088"
+    depends_on:
+    - redis
+    - zookeeper0
+    - zookeeper1
+    - kafka0
+    - kafka1
+    volumes:
+    - /data/belinkwallet:/data/belinkwallet
+    extra_hosts:
+    - "jmenv.tbsite.net:114.67.126.146"
+    - "dev1:114.67.126.146"
     networks:
     - mynet
 
