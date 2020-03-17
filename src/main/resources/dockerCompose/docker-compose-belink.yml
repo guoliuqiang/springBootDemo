@@ -5,9 +5,8 @@ networks:
 
 services:   #服务，下一级均为服务名
   zookeeper0:
-    extends:
-      file: dc-orderer-kafka-base.yaml
-      service: zookeeper
+    image: hyperledger/fabric-zookeeper
+    restart: always
     environment:
     - ZOO_MY_ID=1
     - ZOO_SERVERS=server.1=zookeeper0:2888:3888 server.2=zookeeper1:2888:3888
@@ -18,9 +17,8 @@ services:   #服务，下一级均为服务名
     - mynet
 
   zookeeper1:
-    extends:
-      file: dc-orderer-kafka-base.yaml
-      service: zookeeper
+    image: hyperledger/fabric-zookeeper
+    restart: always
     environment:
     - ZOO_MY_ID=2
     - ZOO_SERVERS=server.1=zookeeper0:2888:3888 server.2=zookeeper1:2888:3888
@@ -31,10 +29,12 @@ services:   #服务，下一级均为服务名
     - mynet
 
   kafka0:
-    extends:
-      file: dc-orderer-kafka-base.yaml
-      service: kafka
+    image: hyperledger/fabric-kafka
+    restart: always
     environment:
+    - KAFKA_MESSAGE_MAX_BYTES=103809024 # 99 * 1024 * 1024 B
+    - KAFKA_REPLICA_FETCH_MAX_BYTES=103809024 # 99 * 1024 * 1024 B
+    - KAFKA_UNCLEAN_LEADER_ELECTION_ENABLE=false
     - KAFKA_BROKER_ID=0
     - KAFKA_MIN_INSYNC_REPLICAS=2
     - KAFKA_DEFAULT_REPLICATION_FACTOR=3
@@ -48,10 +48,12 @@ services:   #服务，下一级均为服务名
     - mynet
 
   kafka1:
-    extends:
-      file: dc-orderer-kafka-base.yaml
-      service: kafka
+    image: hyperledger/fabric-kafka
+    restart: always
     environment:
+    - KAFKA_MESSAGE_MAX_BYTES=103809024 # 99 * 1024 * 1024 B
+    - KAFKA_REPLICA_FETCH_MAX_BYTES=103809024 # 99 * 1024 * 1024 B
+    - KAFKA_UNCLEAN_LEADER_ELECTION_ENABLE=false
     - KAFKA_BROKER_ID=1
     - KAFKA_DEFAULT_REPLICATION_FACTOR=3
     - KAFKA_MIN_INSYNC_REPLICAS=2
@@ -65,50 +67,46 @@ services:   #服务，下一级均为服务名
     - mynet
 
   redis:
-    images: redis
+    image: redis
     container_name: redis01
     ports:
-      - 6379:6379
+    - 6379:6379
     volumes:
-      - /data/redis/redis.conf:/etc/redis/redis.conf
-      - /data/redis/data:/data
+    - /data/redis/redis.conf:/etc/redis/redis.conf
+    - /data/redis/data:/data
     networks:
-      - mynet
+    - mynet
     command: redis-server /etc/redis/redis.conf --appendonly yes
 
-
-  bonus:                                                                   #服务名
+  bonus:
+    image: 37677b95d130
     container_name: bonus                                                      #生成容器名
-#    image: "belinkbonus:0.1"                                                      #生成该容器的镜像名（重构后的镜像）
-    build:                                                                   #构建镜像
-      context: /data/belinkwallet/dockerfile                                                             #dockerfile来源路径（.代表本路径）
-      dockerfile: docker-bonus                                   #指定dockerfile
+    tty: true
     ports:                                                                   #配置端口
     - "10021:10021"       #映射端口:软件端口
     - "10020:10020"
     - "20020:20020"
     depends_on:
-      - redis
-      - zookeeper0
-      - zookeeper1
-      - kafka0
-      - kafka1
+    - redis
+    - zookeeper0
+    - zookeeper1
+    - kafka0
+    - kafka1
     volumes:
-      - /data/belinkwallet:/data/belinkwallet
+    - /data/belinkwallet:/data/belinkwallet
     networks:           #网络名（仅为一个标记，用来保证所有容器运行与同一网络下，保证容器间的互相通信的可行性）
     - mynet
 
   manager:
+    image: 37677b95d130
     container_name: manager
-    build:
-      context: /data/belinkwallet/dockerfile
-      dockerfile: docekr-manager
+    tty: true
     ports:
     - "28090:28090"       #映射端口:软件端口
     - "18089:18089"
     - "8089:8089"
     volumes:
-      - /data/belinkwallet:/data/belinkwallet
+    - /data/belinkwallet:/data/belinkwallet
     networks:
     - mynet
 
