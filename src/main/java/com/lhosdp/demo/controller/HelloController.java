@@ -12,6 +12,10 @@ public class HelloController {
         //
         //
         System.out.println("含铜还是过刘强");
+        System.out.println("含铜还是过刘强");
+        System.out.println("含铜还是过刘强");
+        System.out.println("含铜还是过刘强");
+        System.out.println("含铜还是过刘强");
         //
         //
         //
