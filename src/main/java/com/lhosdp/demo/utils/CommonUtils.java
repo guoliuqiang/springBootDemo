@@ -29,6 +29,7 @@ public class CommonUtils {
         if (expiredTime > 0L) {//过期时间按天取整，精确到每天的23：59，单位s（修正时区-8h）
             expiredTime = (expiredTime / (24 * 3600 * 1000) + 1) * 24 * 3600 - 1 - TimeZone.getDefault().getRawOffset() / 1000;
         }
+        System.out.println("expiredTime"+ expiredTime);
         return expiredTime;
     }
 }

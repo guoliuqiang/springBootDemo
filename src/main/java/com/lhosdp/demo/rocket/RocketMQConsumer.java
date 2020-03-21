@@ -32,7 +32,7 @@ public class RocketMQConsumer {
         String tag = "tag_send_prize";
 //        String accessKey = environment.getProperty("mq.rocket.accessKey");
 //        String secretKey = environment.getProperty("mq.rocket.secretKey");
-
+        String secretKey = "secreKey";
         DefaultMQPushConsumer consumer = new DefaultMQPushConsumer(rocketGroup);
 
         // Specify name server addresses.

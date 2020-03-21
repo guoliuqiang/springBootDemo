@@ -8,6 +8,11 @@ public class HelloController {
 
     @RequestMapping("/hello")
     public String getHello(){
-        return "hello guoliuqiang";
+        return "hello hantong";
+    }
+
+    @RequestMapping("/getTime")
+    public String getTime(){
+        return System.currentTimeMillis() + "";
     }
 }
