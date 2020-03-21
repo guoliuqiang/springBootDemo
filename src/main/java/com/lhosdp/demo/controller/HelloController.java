@@ -11,12 +11,7 @@ public class HelloController {
         System.out.println("lkdjflakdflkadfla");
         //
         //
-        System.out.println("guoliuqianghaishihantong");
-        System.out.println("guoliuqianghaishihantong");
-        System.out.println("guoliuqianghaishihantong");
-        System.out.println("guoliuqianghaishihantong");
-        System.out.println("guoliuqianghaishihantong");
-        System.out.println("guoliuqianghaishihantong");
+        System.out.println("含铜还是过刘强");
         //
         //
         //
