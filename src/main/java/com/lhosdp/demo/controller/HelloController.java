@@ -12,6 +12,11 @@ public class HelloController {
         //
         //
         System.out.println("guoliuqianghaishihantong");
+        System.out.println("guoliuqianghaishihantong");
+        System.out.println("guoliuqianghaishihantong");
+        System.out.println("guoliuqianghaishihantong");
+        System.out.println("guoliuqianghaishihantong");
+        System.out.println("guoliuqianghaishihantong");
         //
         //
         //
