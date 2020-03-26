@@ -11,18 +11,18 @@ import java.util.UUID;
 public class CommonUtils {
 
     public static void main(String[] args) throws ParseException {
-//        System.out.println(UUID.randomUUID().toString());
+        System.out.println(UUID.randomUUID().toString());
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-//        Date parse = simpleDateFormat.parse("2020-12-30 00:00:00");
-//
-//        System.out.println(parse.getTime());
+        Date parse = simpleDateFormat.parse("2020-12-30 00:00:00");
+
+        System.out.println(parse.getTime());
 //        long l = setupAssetExpired(new Date().getTime());
 //        System.out.println(l);
 
-        Long time = 1584806399 * 1000L;
-        Date date = new Date(time);
-        String format = simpleDateFormat.format(date);
-        System.out.println(format);
+//        Long time = 1584806399 * 1000L;
+//        Date date = new Date(time);
+//        String format = simpleDateFormat.format(date);
+//        System.out.println(format);
     }
 
     static public long setupAssetExpired(long expiredTime) {

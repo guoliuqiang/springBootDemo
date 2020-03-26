@@ -79,7 +79,9 @@ services:   #服务，下一级均为服务名
     command: redis-server /etc/redis/redis.conf --appendonly yes
 # edas注册中心
   edas:
-    image: java1.8
+    build:
+      context: /data/belinkwallet/dockerfile
+      dockerfile: belink
     tty: true  #添加控制终端
     container_name: edascenter
     ports:
