@@ -77,6 +77,26 @@ services:   #服务，下一级均为服务名
     networks:
     - mynet
     command: redis-server /etc/redis/redis.conf --appendonly yes
+# edas注册中心
+  edas:
+    image: java1.8
+    tty: true  #添加控制终端
+    container_name: edascenter
+    ports:
+    - "8080:8080"       #映射端口:软件端口
+    - "8848:8848"
+    - "9600:9600"
+    depends_on: #启动此服务的时候会优先起依赖的服务
+    - redis
+    - zookeeper0
+    - zookeeper1
+    - kafka0
+    - kafka1
+    volumes:
+    - /data/edas:/data/edas
+    working_dir: /data/edas
+    networks:
+    - mynet
 
   token:
     build:
