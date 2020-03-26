@@ -106,7 +106,6 @@ services:   #服务，下一级均为服务名
     build:
       context: /data/belinkwallet/dockerfile
       dockerfile: belink
-      tty: true
     container_name: bonus                                                      #生成容器名
     tty: true
     ports:                                                                   #配置端口
