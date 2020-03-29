@@ -1,5 +1,5 @@
 version: '3'    #版本号
-# 构建 redis kafka zookeeper edas token bonus
+# 构建 redis kafka zookeeper edas token bonus manager
 networks:
   mynet:
 
@@ -16,7 +16,6 @@ services:   #服务，下一级均为服务名
     - ZOO_MY_ID=1
     networks:
       - mynet
-
 
   kafka:
     image: wurstmeister/kafka:2.12-2.2.1
