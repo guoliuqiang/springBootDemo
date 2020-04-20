@@ -1,11 +1,9 @@
 package com.lhosdp.demo.utils;
 
-import sun.plugin.com.Utils;
 import java.util.TimeZone;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.TimeZone;
 import java.util.UUID;
 
 public class CommonUtils {
