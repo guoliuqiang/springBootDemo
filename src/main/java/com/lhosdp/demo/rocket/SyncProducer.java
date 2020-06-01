@@ -5,6 +5,10 @@ import org.apache.rocketmq.client.producer.SendResult;
 import org.apache.rocketmq.common.message.Message;
 import org.apache.rocketmq.remoting.common.RemotingHelper;
 
+/**
+ * @author guoliuqaing
+ * 测试代码
+ */
 public class SyncProducer {
 
     public static void main(String[] args) throws Exception {
@@ -12,7 +16,7 @@ public class SyncProducer {
         DefaultMQProducer producer = new
                 DefaultMQProducer("please_rename_unique_group_name");
         // Specify name server addresses.
-        producer.setNamesrvAddr("192.168.65.169:9876");
+        //producer.setNamesrvAddr("192.168.65.169:9876");
         //Launch the instance.
         producer.start();
         for (int i = 0; i < 100; i++) {

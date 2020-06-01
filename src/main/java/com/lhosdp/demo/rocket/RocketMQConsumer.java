@@ -11,7 +11,10 @@ import org.springframework.stereotype.Component;
 import javax.annotation.PostConstruct;
 
 
-@Component
+/**
+ * @author guoliuqaing
+ */
+//@Component
 public class RocketMQConsumer {
     private static Logger logger = LoggerFactory.getLogger(RocketMQConsumer.class.getName());
 
@@ -22,16 +25,10 @@ public class RocketMQConsumer {
     @PostConstruct
     public void init() {
 
-//        String rocketGroup = environment.getProperty("mq.rocket.group");
-//        String rocketServer = environment.getProperty("mq.rocket.server");
-//        String rocketTopic= environment.getProperty("mq.rocket.rocketTopic");
-//        String tag = environment.getProperty("mq.rocket.tag");
-        String rocketGroup = "CID_market";
-        String rocketServer = "192.168.65.169:9876";
+        String rocketGroup = "CID_market_guguugugugugu";
+        String rocketServer = "192.168.65.169:98762222222";
         String rocketTopic= "TP_market";
         String tag = "tag_send_prize";
-//        String accessKey = environment.getProperty("mq.rocket.accessKey");
-//        String secretKey = environment.getProperty("mq.rocket.secretKey");
         String secretKey = "secreKey";
         DefaultMQPushConsumer consumer = new DefaultMQPushConsumer(rocketGroup);
 

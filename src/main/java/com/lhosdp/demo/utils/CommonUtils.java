@@ -1,5 +1,6 @@
 package com.lhosdp.demo.utils;
 
+import java.sql.Time;
 import java.util.TimeZone;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -11,16 +12,27 @@ public class CommonUtils {
     public static void main(String[] args) throws ParseException {
         System.out.println(UUID.randomUUID().toString());
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        Date parse = simpleDateFormat.parse("2020-12-30 00:00:00");
+        //Date parse = simpleDateFormat.parse("2020-12-30 00:00:00");
 
-        System.out.println(parse.getTime());
-//        long l = setupAssetExpired(new Date().getTime());
-//        System.out.println(l);
+        //System.out.println(parse.getTime());
 
-//        Long time = 1584806399 * 1000L;
-//        Date date = new Date(time);
-//        String format = simpleDateFormat.format(date);
-//        System.out.println(format);
+         Date date = new Date();
+        System.out.println(simpleDateFormat.format(date));
+        //毫秒值
+        Long timems = date.getTime();
+        System.out.println(timems);
+        Long time = timems / 1000;
+        Date date1 = new Date(time * 1000);
+        String format = simpleDateFormat.format(date1);
+        System.out.println(format);
+
+//1588935169
+        System.out.println("====");
+        System.out.println(System.currentTimeMillis()/1000);
+        System.out.println(simpleDateFormat.format(new Date(1591977599*1000L)));
+
+
+
     }
 
     static public long setupAssetExpired(long expiredTime) {

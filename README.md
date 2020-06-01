@@ -6,3 +6,8 @@ learnSpringboot
 ///
 增加spring-boot-starter-actuator
 获取服务的一些信息的采集，供运维人员查看相关的指标
+
+添加了Es javaapi的一个简单操作，
+
+添加了mapStruct依赖
+添加了lombok依赖
