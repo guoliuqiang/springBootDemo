@@ -9,5 +9,5 @@ learnSpringboot
 
 添加了Es javaapi的一个简单操作，
 
-添加了mapStruct依赖
+添加了mapStruct依赖，参考https://www.bbsmax.com/A/kvJ3Ym2Odg/
 添加了lombok依赖

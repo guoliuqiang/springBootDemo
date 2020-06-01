@@ -1,12 +1,14 @@
 package com.lhosdp.demo.mapstruct;
 
 import javax.annotation.Generated;
+import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2020-05-29T16:57:38+0800",
+    date = "2020-06-01T13:13:37+0800",
     comments = "version: 1.3.0.Final, compiler: javac, environment: Java 1.8.0_77 (Oracle Corporation)"
 )
+@Component
 public class OrderMapperImpl implements OrderMapper {
 
     @Override
