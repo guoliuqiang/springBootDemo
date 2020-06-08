@@ -8,6 +8,9 @@ import com.lhosdp.demo.mapstruct.muchtoone.Address;
 import com.lhosdp.demo.mapstruct.muchtoone.DeliveryAddress;
 import com.lhosdp.demo.mapstruct.muchtoone.DeliveryAddressMapper;
 import com.lhosdp.demo.mapstruct.muchtoone.Person;
+import com.lhosdp.demo.mybatisplus.User;
+import com.lhosdp.demo.mybatisplus.UserMapper;
+import org.junit.Assert;
 import org.mapstruct.factory.Mappers;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,6 +18,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Date;
+import java.util.List;
 
 /**
  * @author guoliuqaing
@@ -25,6 +29,19 @@ public class HelloController {
 
     @Autowired
     private OrderMapper orderMapper;
+
+    @Autowired
+    private UserMapper userMapper;
+
+    @RequestMapping(value = "/testUserMapper", method = RequestMethod.POST)
+    public void testUserMapper(){
+        System.out.println(("----- selectAll method test ------"));
+        List<User> userList = userMapper.selectList(null);
+        Assert.assertEquals(5, userList.size());
+
+        userList.forEach(System.out::println);
+
+    }
 
 
 
