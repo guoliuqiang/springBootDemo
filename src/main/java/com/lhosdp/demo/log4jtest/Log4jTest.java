@@ -22,7 +22,18 @@ public class Log4jTest {
 //
         //日志记录输出
         //日志级别
-        logger.info("shuchu");
+        //严重错误，一般会造成系统崩溃并终止运行
+        logger.fatal("fatal shuchu");
+        //错误，不会影响系统运行
+        logger.error("error shuchu");
+        //警告，可能会发生问题
+        logger.warn("warn shuchu");
+        //运行信息，数据链接，网络链接，IO操作等
+        logger.info("info shuchu");
+        //调试信息，一般在开发中使用，记录程序变量参数等信息
+        logger.debug("debug shuchu");
+        //追踪信息，记录程序所有的流程信息  log4j默认级别是debug,最后trace这个级别的数据不会输出
+        logger.trace("trace shuchu");
 
 
 

@@ -24,24 +24,13 @@ import java.util.List;
  * @author guoliuqaing
  */
 @RestController
+@RequestMapping("/hello")
 public class HelloController {
 
 
     @Autowired
     private OrderMapper orderMapper;
 
-    @Autowired
-    private UserMapper userMapper;
-
-    @RequestMapping(value = "/testUserMapper", method = RequestMethod.POST)
-    public void testUserMapper(){
-        System.out.println(("----- selectAll method test ------"));
-        List<User> userList = userMapper.selectList(null);
-        Assert.assertEquals(5, userList.size());
-
-        userList.forEach(System.out::println);
-
-    }
 
 
 
