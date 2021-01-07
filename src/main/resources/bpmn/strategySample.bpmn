@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions
+        xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL"
+                  xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+        xmlns:dc="http://www.omg.org/spec/DD/20100524/DC"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:camunda="http://camunda.org/schema/1.0/bpmn"
+        xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
+        id="Definitions_0vxhohu"
+        targetNamespace="http://bpmn.io/schema/bpmn"
+        exporter="Camunda Modeler" exporterVersion="4.2.0"
+>
+  <bpmn:process id="Process_1wr0lg5" isExecutable="true">
+    <!--元素-开始事件-->
+    <bpmn:startEvent id="StartEvent_1" name="从10月1日起每周二启动">
+      <bpmn:outgoing>Flow_0y1odkg</bpmn:outgoing>
+      <!--元素-timerEventDefinition  定时器启动事件 -->
+      <bpmn:timerEventDefinition id="TimerEventDefinition_0qspjpz">
+        <bpmn:timeCycle xsi:type="bpmn:tFormalExpression">R/20201001T090000+08/P1W2D</bpmn:timeCycle>
+      </bpmn:timerEventDefinition>
+    </bpmn:startEvent>
+
+    <!--元素-并行网关  parallelGateway-->
+    <bpmn:parallelGateway id="Gateway_0behgji">
+      <bpmn:incoming>Flow_0crqnne</bpmn:incoming>
+      <bpmn:outgoing>Flow_1idphs4</bpmn:outgoing>
+      <bpmn:outgoing>Flow_0m8cg58</bpmn:outgoing>
+    </bpmn:parallelGateway>
+    <bpmn:sequenceFlow id="Flow_0y1odkg" sourceRef="StartEvent_1" targetRef="Activity_0u86ymc" />
+    <bpmn:sequenceFlow id="Flow_0crqnne" sourceRef="Activity_1cwl6fi" targetRef="Gateway_0behgji" />
+    <bpmn:intermediateCatchEvent id="Event_14xr80t" name="3天后">
+      <bpmn:incoming>Flow_0m8cg58</bpmn:incoming>
+      <bpmn:outgoing>Flow_1yk0nv9</bpmn:outgoing>
+      <bpmn:timerEventDefinition id="TimerEventDefinition_1197aoe">
+        <bpmn:timeDuration xsi:type="bpmn:tFormalExpression">P3D</bpmn:timeDuration>
+      </bpmn:timerEventDefinition>
+    </bpmn:intermediateCatchEvent>
+    <bpmn:sequenceFlow id="Flow_1idphs4" sourceRef="Gateway_0behgji" targetRef="Event_1u83udw" />
+    <bpmn:sequenceFlow id="Flow_0m8cg58" sourceRef="Gateway_0behgji" targetRef="Event_14xr80t" />
+    <bpmn:intermediateCatchEvent id="Event_1u83udw" name="用户使用权益">
+      <bpmn:incoming>Flow_1idphs4</bpmn:incoming>
+      <bpmn:outgoing>Flow_02qxqku</bpmn:outgoing>
+      <bpmn:messageEventDefinition id="MessageEventDefinition_1cy0mzu" messageRef="Message_1j1banj" />
+    </bpmn:intermediateCatchEvent>
+    <bpmn:sequenceFlow id="Flow_1yk0nv9" sourceRef="Event_14xr80t" targetRef="Activity_165cejv" />
+    <bpmn:sequenceFlow id="Flow_02qxqku" sourceRef="Event_1u83udw" targetRef="Activity_1vsda67" />
+    <bpmn:endEvent id="Event_0akjyof">
+      <bpmn:incoming>Flow_0swe6pu</bpmn:incoming>
+      <bpmn:incoming>Flow_08cnxaa</bpmn:incoming>
+      <bpmn:incoming>Flow_041wgk3</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="Flow_0swe6pu" sourceRef="Activity_1vsda67" targetRef="Event_0akjyof" />
+    <bpmn:sequenceFlow id="Flow_0vb3bhm" name="未使用" sourceRef="Activity_165cejv" targetRef="Activity_1j2e5z8">
+      <!--元素-条件顺序流-->
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">${isUsed=false}</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+    <bpmn:sequenceFlow id="Flow_08cnxaa" sourceRef="Activity_1j2e5z8" targetRef="Event_0akjyof" />
+    <bpmn:sequenceFlow id="Flow_041wgk3" name="已使用" sourceRef="Activity_165cejv" targetRef="Event_0akjyof">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">${isUsed=true}</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+    <!--元素-java服务任务-->
+    <bpmn:serviceTask id="Activity_1cwl6fi" name="给用户发放权益" camunda:delegateExpression="${taskService}">
+      <bpmn:extensionElements>
+        <camunda:inputOutput>
+          <camunda:inputParameter name="userId" />
+          <camunda:outputParameter name="couponNo" />
+        </camunda:inputOutput>
+        <camunda:properties>
+          <camunda:property name="couponAsset" />
+          <camunda:property name="amount" />
+        </camunda:properties>
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_0w0jphd</bpmn:incoming>
+      <bpmn:outgoing>Flow_0crqnne</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:serviceTask id="Activity_1vsda67" name="推送产品信息给用户（异步消息）" camunda:delegateExpression="${taskService}">
+      <bpmn:extensionElements>
+        <camunda:properties>
+          <camunda:property name="productUrl" />
+          <camunda:property name="content" />
+        </camunda:properties>
+        <camunda:inputOutput>
+          <camunda:inputParameter name="userId">userId</camunda:inputParameter>
+          <camunda:outputParameter name="traceId" />
+        </camunda:inputOutput>
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_02qxqku</bpmn:incoming>
+      <bpmn:outgoing>Flow_0swe6pu</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:serviceTask id="Activity_165cejv" name="检查用户是否使用权益（同步·查询）" camunda:delegateExpression="${taskService}">
+      <bpmn:extensionElements>
+        <camunda:inputOutput>
+          <camunda:inputParameter name="userId" />
+          <camunda:outputParameter name="isUsed" />
+        </camunda:inputOutput>
+        <camunda:properties>
+          <camunda:property name="couponAsset" />
+        </camunda:properties>
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_1yk0nv9</bpmn:incoming>
+      <bpmn:outgoing>Flow_0vb3bhm</bpmn:outgoing>
+      <bpmn:outgoing>Flow_041wgk3</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:serviceTask id="Activity_1j2e5z8" name="推送活动信息给用户" camunda:delegateExpression="${taskService}">
+      <bpmn:extensionElements>
+        <camunda:inputOutput>
+          <camunda:inputParameter name="userId" />
+          <camunda:outputParameter name="traceId" />
+        </camunda:inputOutput>
+        <camunda:properties>
+          <camunda:property name="activityUrl" />
+          <camunda:property name="content" />
+        </camunda:properties>
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_0vb3bhm</bpmn:incoming>
+      <bpmn:outgoing>Flow_08cnxaa</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:task id="Activity_0u86ymc" name="给用户群发短信">
+      <bpmn:extensionElements>
+        <camunda:properties>
+          <camunda:property name="url" />
+          <camunda:property name="content" />
+        </camunda:properties>
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_0y1odkg</bpmn:incoming>
+      <bpmn:outgoing>Flow_0heewyy</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="Flow_0heewyy" sourceRef="Activity_0u86ymc" targetRef="Event_0rgzbzl" />
+    <bpmn:sequenceFlow id="Flow_0w0jphd" sourceRef="Event_0rgzbzl" targetRef="Activity_1cwl6fi" />
+    <bpmn:intermediateCatchEvent id="Event_0rgzbzl" name="用户点击查看">
+      <bpmn:incoming>Flow_0heewyy</bpmn:incoming>
+      <bpmn:outgoing>Flow_0w0jphd</bpmn:outgoing>
+      <!--元素-消息事件-->
+      <bpmn:messageEventDefinition id="MessageEventDefinition_08a64fu" />
+    </bpmn:intermediateCatchEvent>
+  </bpmn:process>
+  <bpmn:message id="Message_1j1banj" name="consumeCoupon" />
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Process_1wr0lg5">
+      <bpmndi:BPMNEdge id="Flow_0y1odkg_di" bpmnElement="Flow_0y1odkg">
+        <di:waypoint x="208" y="177" />
+        <di:waypoint x="280" y="177" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0crqnne_di" bpmnElement="Flow_0crqnne">
+        <di:waypoint x="670" y="177" />
+        <di:waypoint x="735" y="177" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1idphs4_di" bpmnElement="Flow_1idphs4">
+        <di:waypoint x="760" y="152" />
+        <di:waypoint x="760" y="80" />
+        <di:waypoint x="822" y="80" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0m8cg58_di" bpmnElement="Flow_0m8cg58">
+        <di:waypoint x="760" y="202" />
+        <di:waypoint x="760" y="270" />
+        <di:waypoint x="822" y="270" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1yk0nv9_di" bpmnElement="Flow_1yk0nv9">
+        <di:waypoint x="858" y="270" />
+        <di:waypoint x="930" y="270" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_02qxqku_di" bpmnElement="Flow_02qxqku">
+        <di:waypoint x="858" y="80" />
+        <di:waypoint x="930" y="80" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0swe6pu_di" bpmnElement="Flow_0swe6pu">
+        <di:waypoint x="1030" y="80" />
+        <di:waypoint x="1290" y="80" />
+        <di:waypoint x="1290" y="252" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0vb3bhm_di" bpmnElement="Flow_0vb3bhm">
+        <di:waypoint x="980" y="310" />
+        <di:waypoint x="980" y="400" />
+        <di:waypoint x="1090" y="400" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="979" y="354" width="32" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_08cnxaa_di" bpmnElement="Flow_08cnxaa">
+        <di:waypoint x="1190" y="400" />
+        <di:waypoint x="1290" y="400" />
+        <di:waypoint x="1290" y="288" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_041wgk3_di" bpmnElement="Flow_041wgk3">
+        <di:waypoint x="1030" y="270" />
+        <di:waypoint x="1272" y="270" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1135" y="252" width="33" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0heewyy_di" bpmnElement="Flow_0heewyy">
+        <di:waypoint x="380" y="177" />
+        <di:waypoint x="452" y="177" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0w0jphd_di" bpmnElement="Flow_0w0jphd">
+        <di:waypoint x="488" y="177" />
+        <di:waypoint x="570" y="177" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="Gateway_1olon6n_di" bpmnElement="Gateway_0behgji">
+        <dc:Bounds x="735" y="152" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_0dferr8_di" bpmnElement="Event_14xr80t">
+        <dc:Bounds x="822" y="252" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="827" y="295" width="29" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_1mw5gdp_di" bpmnElement="Event_1u83udw">
+        <dc:Bounds x="822" y="62" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="808" y="105" width="66" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_0akjyof_di" bpmnElement="Event_0akjyof">
+        <dc:Bounds x="1272" y="252" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0gkk0tv_di" bpmnElement="Activity_1cwl6fi">
+        <dc:Bounds x="570" y="137" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0x73w33_di" bpmnElement="Activity_1vsda67">
+        <dc:Bounds x="930" y="40" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0vvmgkt_di" bpmnElement="Activity_165cejv">
+        <dc:Bounds x="930" y="230" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_062x2ku_di" bpmnElement="Activity_1j2e5z8">
+        <dc:Bounds x="1090" y="360" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_08tchoi_di" bpmnElement="StartEvent_1">
+        <dc:Bounds x="172" y="159" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="157" y="202" width="74" height="27" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0u86ymc_di" bpmnElement="Activity_0u86ymc">
+        <dc:Bounds x="280" y="137" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_0ju14hw_di" bpmnElement="Event_0rgzbzl">
+        <dc:Bounds x="452" y="159" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="437" y="202" width="66" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

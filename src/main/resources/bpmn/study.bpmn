@@ -1,0 +1,42 @@
+<definitions
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL
+                    http://www.omg.org/spec/BPMN/2.0/20100501/BPMN20.xsd">
+
+    <!--process  定义流程  id属性必填 name属性可选-->
+    <process id="financialReport" name="Monthly financial report reminder process">
+        <startEvent id="theStart" />
+        <!-- 各个元素间通过顺序流进行链接 顺序流用source 与 target定义顺序流的流向（direction） -->
+        <sequenceFlow id="flow1" sourceRef="theStart" targetRef="writeReportTask" />
+
+        <userTask id="writeReportTask" name="Write monthly financial report" >
+            <documentation>
+                Write monthly financial report for publication to shareholders.
+            </documentation>
+            <potentialOwner>
+                <resourceAssignmentExpression>
+                    <formalExpression>accountancy</formalExpression>
+                </resourceAssignmentExpression>
+            </potentialOwner>
+        </userTask>
+
+        <sequenceFlow id="flow2" sourceRef="writeReportTask" targetRef="verifyReportTask" />
+
+        <userTask id="verifyReportTask" name="Verify monthly financial report" >
+            <documentation>
+                Verify monthly financial report composed by the accountancy department.
+                This financial report is going to be sent to all the company shareholders.
+            </documentation>
+            <potentialOwner>
+                <resourceAssignmentExpression>
+                    <formalExpression>management</formalExpression>
+                </resourceAssignmentExpression>
+            </potentialOwner>
+        </userTask>
+
+        <sequenceFlow id="flow3" sourceRef="verifyReportTask" targetRef="theEnd" />
+
+        <endEvent id="theEnd" />
+    </process>
+
+</definitions>
