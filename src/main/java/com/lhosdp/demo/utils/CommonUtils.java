@@ -43,10 +43,13 @@ public class CommonUtils {
 //        String format = simpleDateFormat.format(new Date(1606730961668L));
 //        System.out.println(format);
 
-//        long l = setupAssetExpired(end);
+       // long l = setupAssetExpired(end);
 //
-//        String format = simpleDateFormat.format(new Date(l * 1000L));
+//        String format = simpleDateFormat.format(new Date(1612022399 * 1000L));
 //        System.out.println(format);
+
+
+
 
 //        long expiredtime = end;
 //        String format = simpleDateFormat.format(new Date(expiredtime));
@@ -57,11 +60,11 @@ public class CommonUtils {
 //        long l = time / 1000;
 //        String format1 = simpleDateFormat.format(new Date(l * 1000));
 //        System.out.println(format1);
-        Integer bonusAmount = 1;
-        Integer exchangeUnit = 300;
-        double cost = (double) bonusAmount / (double)exchangeUnit;
-        long l = new Double(cost * 100).longValue();
-        System.out.println(l);
+//        Integer bonusAmount = 1;
+//        Integer exchangeUnit = 300;
+//        double cost = (double) bonusAmount / (double)exchangeUnit;
+//        long l = new Double(cost * 100).longValue();
+//        System.out.println(l);
 
     }
 

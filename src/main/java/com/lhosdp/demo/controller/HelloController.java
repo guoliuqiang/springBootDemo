@@ -32,10 +32,9 @@ public class HelloController {
     private OrderMapper orderMapper;
 
 
-
-
     @RequestMapping(value = "/testOrder", method = RequestMethod.POST)
     public OrderQueryParam testOrder(){
+
         Order order = new Order();
         order.setId(12345L);
         order.setOrderSn("orderSn");
