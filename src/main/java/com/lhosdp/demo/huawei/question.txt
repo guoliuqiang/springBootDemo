@@ -1,0 +1,20 @@
+Which method is used by a servlet to place its session ID in a URL that is written to the servlet’s response output stream?
+（译：那个方法是servlet用于将其session ID入在一个URL中，该URL写入servlet的响应输出流）
+A. The encodeURL method of the HttpServletRequest interface.
+B. The encodeURL method of the HttpServletResponse interface.
+C. The rewriteURL method of the HttpServletRequest interface.
+D. The rewriteURL method of the HttpServletResponse interface.
+
+D
+
+//equivalent 等效
+Which two are equivalent? (Choose two)
+A. <%= YoshiBean.size%>
+B. <%= YoshiBean.getSize()%>
+C. <%= YoshiBean.getProperty("size")%>
+D. <jsp:getProperty id="YoshiBean" param="size"/>
+E. <jsp:getProperty name="YoshiBean" param="size"/>
+F. <jsp:getProperty id="YoshiBean" property="size"/>
+G. <jsp:getProperty name="YoshiBean" property="size"/>
+
+C G

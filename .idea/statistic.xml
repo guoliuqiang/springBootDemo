@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Statistic">
+    <option name="excludedDirectories">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/com/lhosdp/demo/com" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lhosdp/demo/controller" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lhosdp/demo/domain" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lhosdp/demo/elastic" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lhosdp/demo/enums" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lhosdp/demo/jultest" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lhosdp/demo/jvm" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lhosdp/demo/kafkademo" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lhosdp/demo/log4jtest" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lhosdp/demo/mapstruct" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lhosdp/demo/mockuser" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lhosdp/demo/muchimpl" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lhosdp/demo/mybatisplus" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lhosdp/demo/poi" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lhosdp/demo/prepare" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lhosdp/demo/redisson" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lhosdp/demo/rocket" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lhosdp/demo/scala" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lhosdp/demo/service" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lhosdp/demo/utils" />
+      </list>
+    </option>
+  </component>
+</project>
