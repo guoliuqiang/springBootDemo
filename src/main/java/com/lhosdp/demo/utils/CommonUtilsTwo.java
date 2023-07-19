@@ -8,36 +8,38 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.lhosdp.demo.domain.DistributionCommandDto;
 import com.lhosdp.demo.domain.PublicData;
 import com.lhosdp.demo.domain.PublicTempleRequest;
+import org.apache.commons.lang3.StringUtils;
 
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
+import java.nio.charset.StandardCharsets;
 import java.util.*;
 
 public class CommonUtilsTwo {
 
-    public static void main(String[] args) {
-//        String one = "CustomerUserList(id=22, customerGroupId=1397464496800403456, userName=韩涵涵, userId=200000001311, mobile=13552227295, sex=女, age=32, userType=游客, label=低收入人群, state=启用)";
-//        gethashCode(one);
-//        String two = "CustomerUserList(id=20, customerGroupId=1397464496800403456, userName=南难难, userId=100000001725, mobile=15901209729, sex=男, age=38, userType=游客, label=高收入人群, state=启用)";
-//        gethashCode(two);
-//        String three = "CustomerUserList(id=21, customerGroupId=1397464496800403456, userName=郭果果, userId=200000001181, mobile=13311201459, sex=男, age=27, userType=游客, label=中收入人群, state=启用)";
-//        gethashCode(three);
+    public static void main(String[] args) throws UnsupportedEncodingException {
+        String code = "ACTIVITY-2022051614001218687";
+        String substring = code.substring(code.indexOf("-") +1 , code.length());
+        System.out.println(substring);
+    }
 
-//        String code = "MEMBER-5841006185125280-006";
-//        String[] split = code.split("-");
-//        String levelId = split[1];
-//        String welfareId = split[2];
-//        int i = DateUtil.ageOfNow("1996-12-03");
-//        System.out.println(i);
-//        gethashCode();
-//        Boolean aBoolean = checkdayIsToday(3, "1,");
-//
-//        System.out.println(aBoolean);
-        String businessId = "1100010";
-        List<String> list = new ArrayList<>();
-        for (int i = 0; i < businessId.length(); i = i + 3) {
-            String substring = businessId.substring(0, i + 3);
-            list.add(substring);
+    public static String subStringByByte(String str, ChartSet chartSet, int len) throws UnsupportedEncodingException {
+        if (StringUtils.isBlank(str)) {
+            return str;
         }
-        System.out.println(list);
+        byte[] bytes = str.getBytes(chartSet.getValue());
+        int num = 0;
+        for (int i = len - 1; i >= 0; i--) {
+            if (bytes[i] < 0) {
+                num++;
+            } else {
+                break;
+            }
+        }
+        int sub = num % chartSet.getBytes();
+        return sub == 0
+                ? new String(bytes, 0, len, StandardCharsets.UTF_8)
+                : new String(bytes, 0, len - sub, StandardCharsets.UTF_8);
     }
 
     public static Boolean checkdayIsToday(int day, String days){

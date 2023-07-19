@@ -4,8 +4,25 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.lhosdp.demo.mybatisplus.UserMapper">
 
-    <select id="findAll" resultType="com.lhosdp.demo.mybatisplus.User">
-        select * from user
-    </select>
+    <resultMap type="com.lhosdp.demo.mybatisplus.User" id="userMap">
+        <id column="id" property="id"/>
+        <result column="accountID" property="accountID"/>
+        <result column="userName" property="userName"/>
+        <result column="statusDef" property="statusDef"/>
+        <result column="statusOrdinal" property="statusOrdinal" typeHandler="org.apache.ibatis.type.EnumOrdinalTypeHandler"/>
+    </resultMap>
+
+    <select id="selectUser" resultMap="userMap">
+    select * from t_user where id = #{id}
+  </select>
+
+    <insert id="insertUser" parameterType="com.lhosdp.demo.mybatisplus.User">
+      insert into t_user(id,accountID,userName,statusDef,statusOrdinal)
+      values(
+      #{id}, #{accountID}, #{userName},
+      #{statusDef},
+      #{statusOrdinal, typeHandler=org.apache.ibatis.type.EnumOrdinalTypeHandler}
+      )
+  </insert>
 
 </mapper>

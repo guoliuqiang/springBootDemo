@@ -1,0 +1,11 @@
+<html>
+    <head>
+        <title>007Ka直充交易</title>
+    </head>
+    <body>
+        <form name="test" action="https://ceshi.007ka.cn/recvcdkey.php" method="post"/>
+        <input type="hidden" name="Orderinfo"
+               value="1800000071|100000800000071|184028a0f4bc4861a8d56ed46b9ed9b6||500|||xml|9|007KA_KM|1.0.2.7|||13311201459|20220713174142|||"/>
+        <input type="hidden" name="Sign" value="8FA038E337101DC12874E30241BA0F92"/>
+    </body>
+</html>

@@ -1,0 +1,492 @@
+{
+  "resultCode": 0,
+  "data": {
+    "tunnels": [
+      {
+        "tunnelNo": "07",
+        "channelList": [
+          {
+            "tunnelNo": "07",
+            "channelCode": "MB",
+            "templates": [
+              {
+                "tunnelNo": "07",
+                "channelCode": "MB",
+                "template":"{\"bizId\":1320640668583985732,\"tunnelNo\":\"07\",\"tunnelName\":\"站内信\",\"tunnelUrl\":null,\"tunnelTemplateId\":\"\",\"tunnelTemplateName\":null,\"templateNo\":\"202305120705777690\",\"templateTitle\":\"恭喜活动达标啦\�\�\",\"templateContent\":\"\",\"templateExample\":\"\",\"templateType\":\"1\",\"status\":\"0\",\"templateName\":\"营销活动获得领奖资格-站内信\",\"opId\":null,\"remark\":null,\"billPicUrl\":\"@staticfile/groupdev/M00/00/50/qoYBAGRcj7eAVQEgAAH5abSZTO4004.png\",\"billLink\":\"#${actUrl}#\",\"msgRecommend\":null,\"templateMsgType\":\"0\",\"templateSummary\":\"#${actName}#已获得1次领奖资格，奖品数量有限，先到先得，快来领奖吧~\",\"msgText\":\"\",\"extendedParams\":null,\"channelCode\":\"MB\",\"channelName\":\"手机银行\",\"attachment\":null,\"signature\":null,\"templateStyle\":\"1\",\"btnText\":\"\",\"productType\":null}"
+              },
+              {
+                "tunnelNo": "07",
+                "channelCode": "MB",
+                "template": "{\"bizId\":1320640668583985490,\"tunnelNo\":\"07\",\"tunnelName\":\"站内信\",\"tunnelUrl\":null,\"tunnelTemplateId\":\"\",\"tunnelTemplateName\":null,\"templateNo\":\"7673307030658560\",\"templateTitle\":\"借记卡动账提醒\",\"templateContent\":\"交易账户：#尾号${msg_sub_front(account,4)}#\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n交易方向：#${msg_trans_enum(tranDir,1-收入;2-支出)}#\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n交易金额：#${msg_amount_format(amount)}#\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n交易时间：#${msg_date_format(tranTime,0)}#\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n账户余额：#${msg_amount_format(curAmount)}#\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n备注：#${remark}#\",\"templateExample\":\"\",\"templateType\":\"1\",\"status\":\"0\",\"templateName\":\"借记卡动账提醒-支出-站内信\",\"opId\":null,\"remark\":\"\",\"billPicUrl\":\"@staticfile/groupdev/M00/01/93/wKhBq2BtmsqAPDTvAAURxtlKTlw293.png\",\"billLink\":\"https://dev.lbapp.cn/game/activity_area/index.html?channel=MB\",\"msgRecommend\":\"[{\\\"name\\\":\\\"理财产品\\\",\\\"url\\\":\\\"/ynet_new_financial_products/financial_products/financial_products_list.html\\\",\\\"imageUrl\\\":\\\"@staticfile/groupdev/M00/00/00/qoYBAGEXpX-AS16PAAANtgwP9C8670.png\\\"},{\\\"name\\\":\\\"我的财富\\\",\\\"url\\\":\\\"/ynet_new_my_wealth/my_wealth/index.html\\\",\\\"imageUrl\\\":\\\"@staticfile/groupdev/M00/00/00/qYYBAGEXpYCAAzSsAAAEnRvHXxk022.png\\\"}]\",\"templateMsgType\":\"1\",\"templateSummary\":\"您账户#${msg_sub_front(account,4)}##${msg_trans_enum(tranDir,1-收入;2-支出)}##${msg_amount_format(amount)}#元\",\"msgText\":\"#${msg_trans_enum(currencyType,CNY-￥;USD-$)}##${msg_amount_format(amount)}#\",\"extendedParams\":null,\"channelCode\":\"MB\",\"channelName\":\"手机银行\",\"attachment\":null,\"signature\":null,\"templateStyle\":\"1\",\"btnText\":\"\",\"productType\":null}"
+              },
+              {
+                "tunnelNo": "07",
+                "channelCode": "MB",
+                "template": "{\"bizId\":1320640668583985486,\"tunnelNo\":\"07\",\"tunnelName\":\"站内信\",\"tunnelUrl\":null,\"tunnelTemplateId\":\"\",\"tunnelTemplateName\":null,\"templateNo\":\"7672462298619200\",\"templateTitle\":\"借记卡动账提醒\",\"templateContent\":\"交易账户：#尾号${msg_sub_front(account,4)}#\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n交易方向：#${msg_trans_enum(tranDir,1-收入;2-支出)}#\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n交易时间：#${msg_date_format(tranTime,0)}#\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n账户余额：#${msg_amount_format(curAmount)}#\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n备注：#${remark}#\",\"templateExample\":\"\",\"templateType\":\"1\",\"status\":\"0\",\"templateName\":\"借记卡动账提醒-收入-站内信\",\"opId\":null,\"remark\":\"\",\"billPicUrl\":\"@staticfile/groupdev/M00/01/93/wKhBq2BsbpCASa86AAxmAf2seG8513.png\",\"billLink\":\"https://dev.lbapp.cn/game/game_crowd_operation/index.html?acId=7800872070033729\",\"msgRecommend\":\"[{\\\"name\\\":\\\"理财产品\\\",\\\"url\\\":\\\"/ynet_new_financial_products/financial_products/financial_products_list.html\\\",\\\"imageUrl\\\":\\\"@staticfile/groupdev/M00/00/00/qoYBAGEXpX-AS16PAAANtgwP9C8670.png\\\"},{\\\"name\\\":\\\"我的财富\\\",\\\"url\\\":\\\"/ynet_new_my_wealth/my_wealth/index.html\\\",\\\"imageUrl\\\":\\\"@staticfile/groupdev/M00/00/00/qYYBAGEXpYCAAzSsAAAEnRvHXxk022.png\\\"}]\",\"templateMsgType\":\"1\",\"templateSummary\":\"您账户#${msg_sub_front(account,4)}##${msg_trans_enum(tranDir,1-收入;2-支出)}##${msg_amount_format(amount)}#元\",\"msgText\":\"#${msg_trans_enum(currencyType,CNY-￥;USD-$)}##${msg_amount_format(amount)}#\",\"extendedParams\":null,\"channelCode\":\"MB\",\"channelName\":\"手机银行\",\"attachment\":null,\"signature\":null,\"templateStyle\":\"1\",\"btnText\":\"\",\"productType\":null}"
+              },
+              {
+                "tunnelNo": "07",
+                "channelCode": "MB",
+                "template": "{\"bizId\":1320640668583985495,\"tunnelNo\":\"07\",\"tunnelName\":\"站内信\",\"tunnelUrl\":null,\"tunnelTemplateId\":\"\",\"tunnelTemplateName\":null,\"templateNo\":\"7701024653254144\",\"templateTitle\":\"银行卡转账\",\"templateContent\":\"转出账户：#尾号${msg_sub_after(payerAccount,4)}#\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n转入账号：#尾号${msg_sub_after(payeeAccount,4)}#\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n转账时间：#${msg_date_format(tradeTime,5)}#\",\"templateExample\":\"\",\"templateType\":\"1\",\"status\":\"0\",\"templateName\":\"银行卡转账-转出提醒-站内信\",\"opId\":null,\"remark\":null,\"billPicUrl\":\"@staticfile/groupdev/M00/01/93/wKhBq2BtmsqAPDTvAAURxtlKTlw293.png\",\"billLink\":\"https://dev.lbapp.cn/game/activity_area/index.html?channel=MB\",\"msgRecommend\":\"[{\\\"name\\\":\\\"我要理财\\\",\\\"url\\\":\\\"/ynet_new_financial_products/financial_products/financial_products_list.html\\\",\\\"imageUrl\\\":\\\"@staticfile/groupdev/M00/00/00/qoYBAGEXpX-AS16PAAANtgwP9C8670.png\\\"},{\\\"name\\\":\\\"我的财富\\\",\\\"url\\\":\\\"/ynet_new_my_wealth/my_wealth/index.html\\\",\\\"imageUrl\\\":\\\"@staticfile/groupdev/M00/00/00/qYYBAGEXpYCAAzSsAAAEnRvHXxk022.png\\\"}]\",\"templateMsgType\":\"1\",\"templateSummary\":\"您账户#${msg_sub_after(payerAccount,4)}#向账户#${msg_sub_after(payeeAccount,4)}#转出#${msg_amount_format(tradeAmount)}#元\",\"msgText\":\"#${msg_amount_format(tradeAmount)}#元\",\"extendedParams\":null,\"channelCode\":\"MB\",\"channelName\":\"手机银行\",\"attachment\":null,\"signature\":null,\"templateStyle\":\"1\",\"btnText\":\"\",\"productType\":null}"
+              },
+              {
+                "tunnelNo": "07",
+                "channelCode": "MB",
+                "template":"{\"bizId\":1320640668583985715,\"tunnelNo\":\"07\",\"tunnelName\":\"站内信\",\"tunnelUrl\":null,\"tunnelTemplateId\":\"\",\"tunnelTemplateName\":null,\"templateNo\":\"202209231504105844\",\"templateTitle\":\"银行卡转账\�\�\",\"templateContent\":\"转出账户：#尾号${msg_sub_front(9999,4)}#\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n转入账号：#尾号${msg_sub_front(9999,4)}#\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n转账时间：#2022-09-23 15:15:15#\",\"templateExample\":\"\�\�\",\"templateType\":\"1\",\"status\":\"0\",\"templateName\":\"MP专用-银行卡转账-站内信_固定参数\",\"opId\":null,\"remark\":\"\",\"billPicUrl\":\"\",\"billLink\":\"\",\"msgRecommend\":\"[{\\\"name\\\":\\\"\\\",\\\"url\\\":\\\"\\\",\\\"imageUrl\\\":\\\"\\\"}]\",\"templateMsgType\":\"1\",\"templateSummary\":\"您账户#${msg_sub_front(9999,4)}#向账户#${msg_sub_front(8888,4)}#转出#${msg_amount_format(188)}#元\�\�\",\"msgText\":\"\�\�\",\"extendedParams\":null,\"channelCode\":\"MB\",\"channelName\":\"手机银行\",\"attachment\":null,\"signature\":null,\"templateStyle\":\"1\",\"btnText\":\"\",\"productType\":null}"
+              },
+              {
+                "tunnelNo": "07",
+                "channelCode": "MB",
+                "template":"{\"bizId\":1320640668583985537,\"tunnelNo\":\"07\",\"tunnelName\":\"站内信\",\"tunnelUrl\":null,\"tunnelTemplateId\":\"\",\"tunnelTemplateName\":null,\"templateNo\":\"8010097468619392\",\"templateTitle\":\"测试-站内信-标题#${title}#\�\�\",\"templateContent\":\"\",\"templateExample\":\"\",\"templateType\":\"1\",\"status\":\"0\",\"templateName\":\"测试-站内信-文本消息-勿用\",\"opId\":null,\"remark\":\"\",\"billPicUrl\":\"\",\"billLink\":\"http://www.baidu.com#${url}#\",\"msgRecommend\":null,\"templateMsgType\":\"2\",\"templateSummary\":\"测试-站内信-描述#${templateSummary}#\�\�\",\"msgText\":\"\",\"extendedParams\":null,\"channelCode\":\"MB\",\"channelName\":\"手机银行\",\"attachment\":null,\"signature\":null,\"templateStyle\":\"1\",\"btnText\":\"查看详情\",\"productType\":null}"
+              },
+              {
+                "tunnelNo": "07",
+                "channelCode": "MB",
+                "template": "{\"bizId\":1320640668583985502,\"tunnelNo\":\"07\",\"tunnelName\":\"站内信\",\"tunnelUrl\":null,\"tunnelTemplateId\":\"\",\"tunnelTemplateName\":null,\"templateNo\":\"7783807620916736\",\"templateTitle\":\"#${actTitle}#\",\"templateContent\":\"\",\"templateExample\":\"\",\"templateType\":\"1\",\"status\":\"0\",\"templateName\":\"营销活动投放图文-站内信\",\"opId\":null,\"remark\":\"\",\"billPicUrl\":\"#${actImg}#\",\"billLink\":\"#${actLink}#\",\"msgRecommend\":null,\"templateMsgType\":\"0\",\"templateSummary\":\"#${actLongDesc}#\",\"msgText\":\"\",\"extendedParams\":null,\"channelCode\":\"MB\",\"channelName\":\"手机银行\",\"attachment\":null,\"signature\":null,\"templateStyle\":\"1\",\"btnText\":\"\",\"productType\":null}"
+              },
+              {
+                "tunnelNo": "07",
+                "channelCode": "MB",
+                "template":"{\"bizId\":1320640668583985536,\"tunnelNo\":\"07\",\"tunnelName\":\"站内信\",\"tunnelUrl\":null,\"tunnelTemplateId\":\"\",\"tunnelTemplateName\":null,\"templateNo\":\"8010094893841024\",\"templateTitle\":\"测试-站内信-标题#${title}#\�\�\",\"templateContent\":\"\",\"templateExample\":\"\",\"templateType\":\"1\",\"status\":\"0\",\"templateName\":\"测试-站内信-图文消息-勿用\",\"opId\":null,\"remark\":\"\",\"billPicUrl\":\"@staticfile/groupdev/M00/00/6E/wKhBq15rZ9mAR_h6AAS5XbW5OOU468.png\",\"billLink\":\"http://www.baidu.com#${url}#\",\"msgRecommend\":null,\"templateMsgType\":\"0\",\"templateSummary\":\"测试-站内信-概述#${templateSummary}#\�\�\",\"msgText\":\"\",\"extendedParams\":null,\"channelCode\":\"MB\",\"channelName\":\"手机银行\",\"attachment\":null,\"signature\":null,\"templateStyle\":\"1\",\"btnText\":\"查看详情\",\"productType\":null}"
+              },
+              {
+                "tunnelNo": "07",
+                "channelCode": "MB",
+                "template":"{\"bizId\":1320640668583985487,\"tunnelNo\":\"07\",\"tunnelName\":\"站内信\",\"tunnelUrl\":null,\"tunnelTemplateId\":\"\",\"tunnelTemplateName\":null,\"templateNo\":\"7672528278461760\",\"templateTitle\":\"#${title}#\�\�\",\"templateContent\":\"\",\"templateExample\":\"\",\"templateType\":\"1\",\"status\":\"0\",\"templateName\":\"理财资讯-文本样式1-通用-站内信\",\"opId\":null,\"remark\":null,\"billPicUrl\":\"\",\"billLink\":\"\",\"msgRecommend\":null,\"templateMsgType\":\"2\",\"templateSummary\":\"#${desc}#\�\�\",\"msgText\":\"\",\"extendedParams\":null,\"channelCode\":\"MB\",\"channelName\":\"手机银行\",\"attachment\":null,\"signature\":null,\"templateStyle\":\"1\",\"btnText\":\"\",\"productType\":null}"
+              },
+              {
+                "tunnelNo": "07",
+                "channelCode": "MB",
+                "template": "{\"bizId\":1320640668583985516,\"tunnelNo\":\"07\",\"tunnelName\":\"站内信\",\"tunnelUrl\":null,\"tunnelTemplateId\":\"\",\"tunnelTemplateName\":null,\"templateNo\":\"7868592007654912\",\"templateTitle\":\"积分发放提醒\",\"templateContent\":\"\\n\\n\\n\\n发放时间：#${msg_date_format(updateTime,0)}#\",\"templateExample\":\"\",\"templateType\":\"1\",\"status\":\"0\",\"templateName\":\"积分发放提醒-站内信\",\"opId\":null,\"remark\":\"\",\"billPicUrl\":\"\",\"billLink\":\"\",\"msgRecommend\":\"[{\\\"name\\\":\\\"\\\",\\\"url\\\":\\\"\\\",\\\"imageUrl\\\":\\\"\\\"}]\",\"templateMsgType\":\"1\",\"templateSummary\":\"您有#${number}##${integralName}#已到账\",\"msgText\":\"#${number}# #${integralName}#\",\"extendedParams\":null,\"channelCode\":\"MB\",\"channelName\":\"手机银行\",\"attachment\":null,\"signature\":null,\"templateStyle\":\"1\",\"btnText\":\"查看详情\",\"productType\":null}"
+              }
+            ]
+          },
+          {
+            "tunnelNo": "07",
+            "channelCode": "PB",
+            "templates": [
+              {
+                "tunnelNo": "07",
+                "channelCode": "PB",
+                "template": "{\"bizId\":1320640668583985676,\"tunnelNo\":\"07\",\"tunnelName\":\"站内信\",\"tunnelUrl\":null,\"tunnelTemplateId\":\"\",\"tunnelTemplateName\":null,\"templateNo\":\"202208101002639243\",\"templateTitle\":\"消息标题1\",\"templateContent\":\"明细项1#明细内容1#\",\"templateExample\":\"消息描述1\",\"templateType\":\"1\",\"status\":\"0\",\"templateName\":\"站内信审核卡片消息\",\"opId\":null,\"remark\":null,\"billPicUrl\":\"@staticfile/groupdev/M00/00/11/qoYBAGKbfcKAH7AUAAENcj4ZrAw136.png\",\"billLink\":\"广告跳转链接1\",\"msgRecommend\":\"[{\\\"name\\\":\\\"功能名称1\\\",\\\"url\\\":\\\"调整链接1\\\",\\\"imageUrl\\\":\\\"@staticfile/groupdev/M00/00/11/qoYBAGKbfcKARMQSAAABJlwWAUI365.png\\\"}]\",\"templateMsgType\":\"1\",\"templateSummary\":\"消息概要1\",\"msgText\":\"消息正文1\",\"extendedParams\":null,\"channelCode\":\"PB\",\"channelName\":\"个人网银\",\"attachment\":null,\"signature\":null,\"templateStyle\":\"1\",\"btnText\":\"查看详情\",\"productType\":null}"
+              }
+            ]
+          },
+          {
+            "tunnelNo": "07",
+            "channelCode": "AAA"
+          }
+        ]
+      },
+      {
+        "tunnelNo": "03",
+        "channelList": [
+          {
+            "tunnelNo": "03",
+            "channelCode": "MB",
+            "templates": [
+              {
+                "tunnelNo": "03",
+                "channelCode": "MB",
+                "template": "{\"bizId\":1320640668583985736,\"tunnelNo\":\"03\",\"tunnelName\":\"mPaaS推送\",\"tunnelUrl\":null,\"tunnelTemplateId\":\"GENERAL_TITLE_TEMPLATE\",\"tunnelTemplateName\":\"mPaaS推送通用模板(含标题)\",\"templateNo\":\"202305301205861552\",\"templateTitle\":\"#title:权益B#\",\"templateContent\":\"#content:这里是权益B#\",\"templateExample\":\"\",\"templateType\":\"1\",\"status\":\"0\",\"templateName\":\"山盟权益B-mPaaS推送\",\"opId\":null,\"remark\":null,\"billPicUrl\":\"\",\"billLink\":\"\",\"msgRecommend\":null,\"templateMsgType\":\"0\",\"templateSummary\":\"\",\"msgText\":\"\",\"extendedParams\":\"{\\\"linkAddress\\\":\\\"\\\"}\",\"channelCode\":\"MB\",\"channelName\":\"手机银行\",\"attachment\":null,\"signature\":null,\"templateStyle\":\"1\",\"btnText\":null,\"productType\":null}"
+              },
+              {
+                "tunnelNo": "03",
+                "channelCode": "MB",
+                "template": "{\"bizId\":1320640668583985731,\"tunnelNo\":\"03\",\"tunnelName\":\"mPaaS推送\",\"tunnelUrl\":null,\"tunnelTemplateId\":\"GENERAL_TITLE_TEMPLATE\",\"tunnelTemplateName\":\"mPaaS推送通用模板(含标题)\",\"templateNo\":\"202305120705777680\",\"templateTitle\":\"#title:恭喜活动达标啦#\",\"templateContent\":\"#content:${actName}获得1次领奖资格，快来领取吧~#\",\"templateExample\":\"\",\"templateType\":\"1\",\"status\":\"0\",\"templateName\":\"营销活动获得领奖资格-mPaaS\",\"opId\":null,\"remark\":null,\"billPicUrl\":\"\",\"billLink\":\"\",\"msgRecommend\":null,\"templateMsgType\":\"0\",\"templateSummary\":\"\",\"msgText\":\"\",\"extendedParams\":\"{\\\"linkAddress\\\":\\\"#${actUrl}#\\\",\\\"linkType\\\":\\\"3\\\",\\\"loginFlag\\\":\\\"1\\\"}\",\"channelCode\":\"MB\",\"channelName\":\"手机银行\",\"attachment\":null,\"signature\":null,\"templateStyle\":\"1\",\"btnText\":null,\"productType\":null}"
+              },
+              {
+                "tunnelNo": "03",
+                "channelCode": "MB",
+                "template": "{\"bizId\":1320640668583985485,\"tunnelNo\":\"03\",\"tunnelName\":\"mPaaS推送\",\"tunnelUrl\":null,\"tunnelTemplateId\":\"DEBIT-CARD-REMINDER-GENERAL\",\"tunnelTemplateName\":\"借记卡动账提醒-通用-mPaaS\",\"templateNo\":\"7672400095518016\",\"templateTitle\":\"借记卡动账提醒\",\"templateContent\":\"您#account:尾号${msg_sub_front(account,4)}账户#发生了一笔动账交易，点击查看详情\",\"templateExample\":\"\",\"templateType\":\"1\",\"status\":\"0\",\"templateName\":\"借记卡动账提醒-通用-mPaaS\",\"opId\":null,\"remark\":null,\"billPicUrl\":\"\",\"billLink\":\"\",\"msgRecommend\":null,\"templateMsgType\":\"0\",\"templateSummary\":\"\",\"msgText\":\"\",\"extendedParams\":\"{\\\"linkAddress\\\":\\\"/ynet_message_center/message_center/index.html\\\",\\\"linkType\\\":\\\"2\\\",\\\"loginFlag\\\":\\\"1\\\"}\",\"channelCode\":\"MB\",\"channelName\":\"手机银行\",\"attachment\":null,\"signature\":null,\"templateStyle\":\"1\",\"btnText\":\"\",\"productType\":null}"
+              },
+              {
+                "tunnelNo": "03",
+                "channelCode": "MB",
+                "template": "{\"bizId\":1320640668583985493,\"tunnelNo\":\"03\",\"tunnelName\":\"mPaaS推送\",\"tunnelUrl\":null,\"tunnelTemplateId\":\"CARD-TRANSFER-OUT\",\"tunnelTemplateName\":\"银行卡转账-转出提醒-mPaaS\",\"templateNo\":\"7693023988293120\",\"templateTitle\":\"银行卡转账\",\"templateContent\":\"您向#name:${payeeAccountName}#转出#amount:${msg_amount_format(tradeAmount)}元#，点击查看详情。\",\"templateExample\":\"\",\"templateType\":\"1\",\"status\":\"0\",\"templateName\":\"银行卡转账-转出提醒-mPaaS\",\"opId\":null,\"remark\":null,\"billPicUrl\":\"\",\"billLink\":\"\",\"msgRecommend\":null,\"templateMsgType\":\"0\",\"templateSummary\":\"\",\"msgText\":\"\",\"extendedParams\":\"{\\\"linkAddress\\\":\\\"/ynet_message_center/message_center/index.html\\\",\\\"linkType\\\":\\\"2\\\",\\\"loginFlag\\\":\\\"1\\\"}\",\"channelCode\":\"MB\",\"channelName\":\"手机银行\",\"attachment\":null,\"signature\":null,\"templateStyle\":\"1\",\"btnText\":\"\",\"productType\":null}"
+              },
+              {
+                "tunnelNo": "03",
+                "channelCode": "MB",
+                "template": "{\"bizId\":1320640668583985730,\"tunnelNo\":\"03\",\"tunnelName\":\"mPaaS推送\",\"tunnelUrl\":null,\"tunnelTemplateId\":\"MPS-IMGANDTEXT-DEMO\",\"tunnelTemplateName\":\"MPAAS-图文消息演示\",\"templateNo\":\"202302021805566136\",\"templateTitle\":\"#title:${msgTitle}#\",\"templateContent\":\"#content:${contentData}#-跳转连接#url:${billPicUrl}#\",\"templateExample\":\"\",\"templateType\":\"1\",\"status\":\"0\",\"templateName\":\"MPAAS图文消息测试-OK\",\"opId\":null,\"remark\":null,\"billPicUrl\":\"\",\"billLink\":\"\",\"msgRecommend\":null,\"templateMsgType\":\"0\",\"templateSummary\":\"\",\"msgText\":\"\",\"extendedParams\":\"{\\\"linkAddress\\\":\\\"\\\",\\\"linkType\\\":\\\"1\\\",\\\"loginFlag\\\":\\\"0\\\"}\",\"channelCode\":\"MB\",\"channelName\":\"手机银行\",\"attachment\":null,\"signature\":null,\"templateStyle\":\"1\",\"btnText\":null,\"productType\":null}"
+              },
+              {
+                "tunnelNo": "03",
+                "channelCode": "MB",
+                "template": "{\"bizId\":1320640668583985729,\"tunnelNo\":\"03\",\"tunnelName\":\"mPaaS推送\",\"tunnelUrl\":null,\"tunnelTemplateId\":\"MPS-LARGETEXT-DEMO\",\"tunnelTemplateName\":\"MPAAS-大文本演示模板\",\"templateNo\":\"202302021805566130\",\"templateTitle\":\"#title:${msgTitle}#\",\"templateContent\":\"#content:${contentData}#-跳转连接#url:${billPicUrl}#\",\"templateExample\":\"\",\"templateType\":\"1\",\"status\":\"0\",\"templateName\":\"MPAAS-大文本测试-OK\",\"opId\":null,\"remark\":null,\"billPicUrl\":\"\",\"billLink\":\"\",\"msgRecommend\":null,\"templateMsgType\":\"0\",\"templateSummary\":\"\",\"msgText\":\"\",\"extendedParams\":\"{\\\"linkAddress\\\":\\\"\\\",\\\"linkType\\\":\\\"1\\\",\\\"loginFlag\\\":\\\"0\\\"}\",\"channelCode\":\"MB\",\"channelName\":\"手机银行\",\"attachment\":null,\"signature\":null,\"templateStyle\":\"1\",\"btnText\":null,\"productType\":null}"
+              },
+              {
+                "tunnelNo": "03",
+                "channelCode": "MB",
+                "template":"{\"bizId\":1320640668583985716,\"tunnelNo\":\"03\",\"tunnelName\":\"mPaaS推送\",\"tunnelUrl\":null,\"tunnelTemplateId\":\"CARD-TRANSFER-OUT\",\"tunnelTemplateName\":\"银行卡转账-转出提醒-mPaaS\",\"templateNo\":\"202209231504105852\",\"templateTitle\":\"银行卡转账\",\"templateContent\":\"您向#name:${9999}#转出#amount:${msg_amount_format(188)}\�\�#，点击查看详情。\",\"templateExample\":\"\",\"templateType\":\"1\",\"status\":\"0\",\"templateName\":\"MP专用-银行卡转账-mPaaS_固定参数\",\"opId\":null,\"remark\":null,\"billPicUrl\":\"\",\"billLink\":\"\",\"msgRecommend\":null,\"templateMsgType\":\"0\",\"templateSummary\":\"\",\"msgText\":\"\",\"extendedParams\":\"{\\\"linkAddress\\\":\\\"\\\",\\\"loginFlag\\\":\\\"\\\"}\",\"channelCode\":\"MB\",\"channelName\":\"手机银行\",\"attachment\":null,\"signature\":null,\"templateStyle\":\"1\",\"btnText\":\"\",\"productType\":null}"
+              },
+              {
+                "tunnelNo": "03",
+                "channelCode": "MB",
+                "template":"{\"bizId\":1320640668583985704,\"tunnelNo\":\"03\",\"tunnelName\":\"mPaaS推送\",\"tunnelUrl\":null,\"tunnelTemplateId\":\"CARD-TRANSFER-OUT\",\"tunnelTemplateName\":\"银行卡转账-转出提醒-mPaaS\",\"templateNo\":\"202209051503213617\",\"templateTitle\":\"银行卡转账\",\"templateContent\":\"您向#name:${payeeAccountName}#转出#amount:${msg_amount_format(tradeAmount)}\�\�#，点击查看详情。\",\"templateExample\":\"\",\"templateType\":\"1\",\"status\":\"0\",\"templateName\":\"MP专用-银行卡转账-mPaaS\",\"opId\":null,\"remark\":null,\"billPicUrl\":\"\",\"billLink\":\"\",\"msgRecommend\":null,\"templateMsgType\":\"0\",\"templateSummary\":\"\",\"msgText\":\"\",\"extendedParams\":\"{\\\"linkAddress\\\":\\\"\\\",\\\"loginFlag\\\":\\\"\\\"}\",\"channelCode\":\"MB\",\"channelName\":\"手机银行\",\"attachment\":null,\"signature\":null,\"templateStyle\":\"1\",\"btnText\":\"\",\"productType\":null}"
+              },
+              {
+                "tunnelNo": "03",
+                "channelCode": "MB",
+                "template": "{\"bizId\":1320640668583985709,\"tunnelNo\":\"03\",\"tunnelName\":\"mPaaS推送\",\"tunnelUrl\":null,\"tunnelTemplateId\":\"GENERAL_TEMPLATE\",\"tunnelTemplateName\":\"mPaaS推送空白模板\",\"templateNo\":\"202209051603213872\",\"templateTitle\":\"猎豹移动银行\",\"templateContent\":\"#content:${contentData}#\",\"templateExample\":\"\",\"templateType\":\"1\",\"status\":\"0\",\"templateName\":\"MP专用-服务公告-mPaaS\",\"opId\":null,\"remark\":null,\"billPicUrl\":\"\",\"billLink\":\"\",\"msgRecommend\":null,\"templateMsgType\":\"0\",\"templateSummary\":\"\",\"msgText\":\"\",\"extendedParams\":\"{\\\"linkAddress\\\":\\\"#${billPicUrl}#\\\",\\\"linkType\\\":\\\"3\\\",\\\"loginFlag\\\":\\\"0\\\"}\",\"channelCode\":\"MB\",\"channelName\":\"手机银行\",\"attachment\":null,\"signature\":null,\"templateStyle\":\"1\",\"btnText\":null,\"productType\":null}"
+              },
+              {
+                "tunnelNo": "03",
+                "channelCode": "MB",
+                "template": "{\"bizId\":1320640668583985675,\"tunnelNo\":\"03\",\"tunnelName\":\"mPaaS推送\",\"tunnelUrl\":null,\"tunnelTemplateId\":\"purchase-financial-products\",\"tunnelTemplateName\":\"购买理财产品提醒-mPaaS\",\"templateNo\":\"202208101002639241\",\"templateTitle\":\"purchase-financial-products\",\"templateContent\":\"您#account:account${tranDir}1#账户购买理财产品#productName:productName1#金额#amount:amount1#，点击查看详情。\",\"templateExample\":\"\",\"templateType\":\"1\",\"status\":\"0\",\"templateName\":\"mpaas审核测试1\",\"opId\":null,\"remark\":null,\"billPicUrl\":\"\",\"billLink\":\"\",\"msgRecommend\":null,\"templateMsgType\":\"0\",\"templateSummary\":\"\",\"msgText\":\"\",\"extendedParams\":\"{\\\"linkAddress\\\":\\\"跳转链接地址1\\\",\\\"linkType\\\":\\\"1\\\",\\\"loginFlag\\\":\\\"1\\\"}\",\"channelCode\":\"MB\",\"channelName\":\"手机银行\",\"attachment\":null,\"signature\":null,\"templateStyle\":\"1\",\"btnText\":null,\"productType\":null}"
+              }
+            ]
+          },
+          {
+            "tunnelNo": "03",
+            "channelCode": "BSD"
+          },
+          {
+            "tunnelNo": "03",
+            "channelCode": "MB_UAT"
+          }
+        ]
+      },
+      {
+        "tunnelNo": "02",
+        "channelList": [
+          {
+            "tunnelNo": "02",
+            "channelCode": "WX-YNET",
+            "templates": [
+              {
+                "tunnelNo": "02",
+                "channelCode": "WX-YNET",
+                "template": "{\"bizId\":1320640668583985746,\"tunnelNo\":\"02\",\"tunnelName\":\"微信公众号\",\"tunnelUrl\":null,\"tunnelTemplateId\":\"SMWYQ200\",\"tunnelTemplateName\":\"山盟-通用模板-微信公众号\",\"templateNo\":\"202306010005916398\",\"templateTitle\":\"山盟-通用模板-微信公众号\",\"templateContent\":\"#first:权益B# \",\"templateExample\":\"\",\"templateType\":\"1\",\"status\":\"0\",\"templateName\":\"山盟权益B-微信公众号\",\"opId\":null,\"remark\":null,\"billPicUrl\":\"\",\"billLink\":\"\",\"msgRecommend\":null,\"templateMsgType\":\"0\",\"templateSummary\":\"\",\"msgText\":\"\",\"extendedParams\":null,\"channelCode\":\"WX-YNET\",\"channelName\":\"易诚产品研发\",\"attachment\":null,\"signature\":null,\"templateStyle\":\"1\",\"btnText\":\"查看详情\",\"productType\":null}"
+              },
+              {
+                "tunnelNo": "02",
+                "channelCode": "WX-YNET",
+                "template": "{\"bizId\":1320640668583985745,\"tunnelNo\":\"02\",\"tunnelName\":\"微信公众号\",\"tunnelUrl\":null,\"tunnelTemplateId\":\"SMWYQ100\",\"tunnelTemplateName\":\"山盟wyq-提醒领权益-微信公众号2\",\"templateNo\":\"202305311505915989\",\"templateTitle\":\"山盟-提醒领权益-微信公众号2\",\"templateContent\":\"#first:尊敬的${msg_customer_info(userId,1)}客户，您的权益A已到账，快去手机银行领取#\",\"templateExample\":\"\",\"templateType\":\"1\",\"status\":\"0\",\"templateName\":\"山盟-提醒领权益-微信公众号\",\"opId\":null,\"remark\":null,\"billPicUrl\":\"\",\"billLink\":\"\",\"msgRecommend\":null,\"templateMsgType\":\"0\",\"templateSummary\":\"\",\"msgText\":\"\",\"extendedParams\":null,\"channelCode\":\"WX-YNET\",\"channelName\":\"易诚产品研发\",\"attachment\":null,\"signature\":null,\"templateStyle\":\"1\",\"btnText\":\"查看详情\",\"productType\":null}"
+              },
+              {
+                "tunnelNo": "02",
+                "channelCode": "WX-YNET",
+                "template":"{\"bizId\":1320640668583985717,\"tunnelNo\":\"02\",\"tunnelName\":\"微信公众号\",\"tunnelUrl\":null,\"tunnelTemplateId\":\"OMDrg0ldjqXcwh0fag9V8tOlaSIFfxBQtaarpKy6RAY\",\"tunnelTemplateName\":\"借记卡动账提醒-微信公众号\",\"templateNo\":\"202209231504105861\",\"templateTitle\":\"账户资金变动提醒\",\"templateContent\":\"#first:您账户${msg_sub_front(999999,4)}发生了一笔转账交易\�\�#\\n交易类型：#keyword1:转账\�\�#\\n交易金额：#keyword2:${msg_amount_format(188)}\�\�#\\n交易时间：#keyword3:${msg_date_format(20220923151515,0)}\�\�#\\n账户余额：#keyword4:${msg_amount_format(188)}\�\�\�\�#\\n#remark:如有疑问，请详询客服！\�\�#\",\"templateExample\":\"\",\"templateType\":\"1\",\"status\":\"0\",\"templateName\":\"MP专用-银行卡转账-微信公众号_固定参数\",\"opId\":null,\"remark\":null,\"billPicUrl\":\"\",\"billLink\":\"\",\"msgRecommend\":null,\"templateMsgType\":\"0\",\"templateSummary\":\"\",\"msgText\":\"\",\"extendedParams\":null,\"channelCode\":\"WX-YNET\",\"channelName\":\"易诚产品研发\",\"attachment\":null,\"signature\":null,\"templateStyle\":\"1\",\"btnText\":\"\",\"productType\":null}"
+              },
+              {
+                "tunnelNo": "02",
+                "channelCode": "WX-YNET",
+                "template":"{\"bizId\":1320640668583985705,\"tunnelNo\":\"02\",\"tunnelName\":\"微信公众号\",\"tunnelUrl\":null,\"tunnelTemplateId\":\"OMDrg0ldjqXcwh0fag9V8tOlaSIFfxBQtaarpKy6RAY\",\"tunnelTemplateName\":\"借记卡动账提醒-微信公众号\",\"templateNo\":\"202209051503213633\",\"templateTitle\":\"账户资金变动提醒\",\"templateContent\":\"#first:您账户${msg_sub_front(payerAccount,4)}发生了一笔转账交易\�\�#\\n交易类型：#keyword1:转账\�\�#\\n交易金额：#keyword2:${msg_amount_format(tradeAmount)}\�\�#\\n交易时间：#keyword3:${msg_date_format(tradeTime,0)}\�\�#\\n账户余额：#keyword4:${msg_amount_format(tradeAmount)}\�\�\�\�#\\n#remark:如有疑问，请详询客服！\�\�#\",\"templateExample\":\"\",\"templateType\":\"1\",\"status\":\"0\",\"templateName\":\"MP专用-银行卡转账-微信公众号\",\"opId\":null,\"remark\":null,\"billPicUrl\":\"\",\"billLink\":\"\",\"msgRecommend\":null,\"templateMsgType\":\"0\",\"templateSummary\":\"\",\"msgText\":\"\",\"extendedParams\":null,\"channelCode\":\"WX-YNET\",\"channelName\":\"易诚产品研发\",\"attachment\":null,\"signature\":null,\"templateStyle\":\"1\",\"btnText\":\"\",\"productType\":null}"
+              },
+              {
+                "tunnelNo": "02",
+                "channelCode": "WX-YNET",
+                "template": "{\"bizId\":1320640668583985674,\"tunnelNo\":\"02\",\"tunnelName\":\"微信公众号\",\"tunnelUrl\":null,\"tunnelTemplateId\":\"tGU_VweXfGcUyUZ2lLbvQFm_iYQiCYmtG3zXV0prZZM\",\"tunnelTemplateName\":\"积分变动提醒-微信公众号\",\"templateNo\":\"202208101002639239\",\"templateTitle\":\"积分变动通知\",\"templateContent\":\"#first:first1#\\n用户名：#keyword1:keyword11#\\n时间：#keyword2:keyword21#\\n积分变动：#keyword3:keyword31#\\n积分余额：#keyword4:keyword41#\\n变动原因：#keyword5:keyword51#\\n#remark:remark1#\",\"templateExample\":\"\",\"templateType\":\"1\",\"status\":\"0\",\"templateName\":\"微信公众号审核测试1\",\"opId\":null,\"remark\":null,\"billPicUrl\":\"\",\"billLink\":\"消息跳转链接1\",\"msgRecommend\":null,\"templateMsgType\":\"0\",\"templateSummary\":\"\",\"msgText\":\"\",\"extendedParams\":null,\"channelCode\":\"WX-YNET\",\"channelName\":\"易诚产品研发\",\"attachment\":null,\"signature\":null,\"templateStyle\":\"1\",\"btnText\":\"查看详情\",\"productType\":null}"
+              },
+              {
+                "tunnelNo": "02",
+                "channelCode": "WX-YNET",
+                "template":"{\"bizId\":1320640668583985623,\"tunnelNo\":\"02\",\"tunnelName\":\"微信公众号\",\"tunnelUrl\":null,\"tunnelTemplateId\":\"sUUAIZU98klRoCWU2l98dLfeunyJmtgY08oNknKyy7Y\",\"tunnelTemplateName\":\"预约成功提醒\",\"templateNo\":\"202207191802042872\",\"templateTitle\":\"预约成功提醒\",\"templateContent\":\"#first:\�\�#\\n预约项目：#keyword1:\�\�#\\n预约时间：#keyword2:\�\�#\\n#remark:备注123#\",\"templateExample\":\"\",\"templateType\":\"1\",\"status\":\"0\",\"templateName\":\"微信公众号表情测试\",\"opId\":null,\"remark\":null,\"billPicUrl\":\"\",\"billLink\":\"\",\"msgRecommend\":null,\"templateMsgType\":\"0\",\"templateSummary\":\"\",\"msgText\":\"\",\"extendedParams\":null,\"channelCode\":\"WX-YNET\",\"channelName\":\"易诚产品研发\",\"attachment\":null,\"signature\":null,\"templateStyle\":\"1\",\"btnText\":\"查看详情\",\"productType\":null}"
+              },
+              {
+                "tunnelNo": "02",
+                "channelCode": "WX-YNET",
+                "template": "{\"bizId\":1320640668583985492,\"tunnelNo\":\"02\",\"tunnelName\":\"微信公众号\",\"tunnelUrl\":null,\"tunnelTemplateId\":\"OMDrg0ldjqXcwh0fag9V8tOlaSIFfxBQtaarpKy6RAY\",\"tunnelTemplateName\":\"借记卡动账提醒-微信公众号\",\"templateNo\":\"7692997336178176\",\"templateTitle\":\"账户资金变动提醒\",\"templateContent\":\"#first:您账户${msg_sub_front(account,4)}发生了一笔动账交易#\\n交易类型：#keyword1:${msg_trans_enum(tranDir,1-收入;2-支出)}#\\n交易金额：#keyword2:${msg_amount_format(amount)}#\\n交易时间：#keyword3:${msg_date_format(tranTime,0)}#\\n账户余额：#keyword4:${msg_amount_format(curAmount)}#\\n#remark:如有疑问，请详询客服！#\",\"templateExample\":null,\"templateType\":\"1\",\"status\":\"0\",\"templateName\":\"借记卡动账提醒-微信公众号\",\"opId\":null,\"remark\":null,\"billPicUrl\":\"\",\"billLink\":\"\",\"msgRecommend\":null,\"templateMsgType\":\"0\",\"templateSummary\":\"\",\"msgText\":\"\",\"extendedParams\":null,\"channelCode\":\"WX-YNET\",\"channelName\":\"易诚产品研发\",\"attachment\":null,\"signature\":null,\"templateStyle\":\"1\",\"btnText\":\"\",\"productType\":null}"
+              },
+              {
+                "tunnelNo": "02",
+                "channelCode": "WX-YNET",
+                "template": "{\"bizId\":1320640668583985540,\"tunnelNo\":\"02\",\"tunnelName\":\"微信公众号\",\"tunnelUrl\":null,\"tunnelTemplateId\":\"j3r4h58TPIZpw8lpkQp1Hb-kqDlO4ik859s8qGI-Uvg\",\"tunnelTemplateName\":\"银行卡转账提醒-微信公众号\",\"templateNo\":\"8010194143427200\",\"templateTitle\":\"转账通知\",\"templateContent\":\"#first:${first}#\\n转出账户：#keyword1:${keyword1}#\\n转入账户：#keyword2:${keyword2}#\\n转账金额：#keyword3:${keyword3}#\\n转账时间：#keyword4:${keyword4}#\\n#remark:${remark}#\",\"templateExample\":null,\"templateType\":\"1\",\"status\":\"0\",\"templateName\":\"测试-微信公众号-勿用\",\"opId\":null,\"remark\":\"\",\"billPicUrl\":\"\",\"billLink\":\"#${url}#\",\"msgRecommend\":null,\"templateMsgType\":\"0\",\"templateSummary\":\"\",\"msgText\":\"\",\"extendedParams\":null,\"channelCode\":\"WX-YNET\",\"channelName\":\"易诚产品研发\",\"attachment\":null,\"signature\":null,\"templateStyle\":\"1\",\"btnText\":\"查看详情\",\"productType\":null}"
+              },
+              {
+                "tunnelNo": "02",
+                "channelCode": "WX-YNET",
+                "template": "{\"bizId\":1320640668583985562,\"tunnelNo\":\"02\",\"tunnelName\":\"微信公众号\",\"tunnelUrl\":null,\"tunnelTemplateId\":\"tGU_VweXfGcUyUZ2lLbvQFm_iYQiCYmtG3zXV0prZZM\",\"tunnelTemplateName\":\"积分变动提醒-微信公众号\",\"templateNo\":\"202205181500396977\",\"templateTitle\":\"积分变动通知\",\"templateContent\":\"#first: 您好，您的${integralName}发生一笔变动。#\\n用户名：#keyword1:${msg_customer_info(userId,1)}#\\n时间：#keyword2:${msg_date_format(updateTime,0)}#\\n积分变动：#keyword3:+${number}#\\n积分余额：#keyword4:请进入详情页查看#\\n变动原因：#keyword5:请进入详情页查看#\\n#remark:感谢您的使用！#\",\"templateExample\":null,\"templateType\":\"1\",\"status\":\"0\",\"templateName\":\"积分发放提醒-微信公众号\",\"opId\":null,\"remark\":\"\",\"billPicUrl\":\"\",\"billLink\":\"\",\"msgRecommend\":null,\"templateMsgType\":\"0\",\"templateSummary\":\"\",\"msgText\":\"\",\"extendedParams\":null,\"channelCode\":\"WX-YNET\",\"channelName\":\"易诚产品研发\",\"attachment\":null,\"signature\":null,\"templateStyle\":\"1\",\"btnText\":\"查看详情\",\"productType\":null}"
+              },
+              {
+                "tunnelNo": "02",
+                "channelCode": "WX-YNET",
+                "template": "{\"bizId\":1320640668583985563,\"tunnelNo\":\"02\",\"tunnelName\":\"微信公众号\",\"tunnelUrl\":null,\"tunnelTemplateId\":\"6XJ_PDkUc5hZmXevJUQ1gckfkSZVrLnIj5-hbVd4Kn8\",\"tunnelTemplateName\":\"卡券使用提醒-微信公众号\",\"templateNo\":\"202205181500397037\",\"templateTitle\":\"核销成功通知\",\"templateContent\":\"#first: 您好，您有${number}卡券已使用。#\\n核销时间：#keyword1:${msg_date_format(updateTime,0)}#\\n核销名称：#keyword2:${couponName}#\\n核销总额：#keyword3:已优惠${discountAmount}元#\\n#remark:祝您生活愉快!#\",\"templateExample\":null,\"templateType\":\"1\",\"status\":\"0\",\"templateName\":\"卡券使用提醒\",\"opId\":null,\"remark\":\"\",\"billPicUrl\":\"\",\"billLink\":\"\",\"msgRecommend\":null,\"templateMsgType\":\"0\",\"templateSummary\":\"\",\"msgText\":\"\",\"extendedParams\":null,\"channelCode\":\"WX-YNET\",\"channelName\":\"易诚产品研发\",\"attachment\":null,\"signature\":null,\"templateStyle\":\"1\",\"btnText\":\"查看详情\",\"productType\":null}"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tunnelNo": "01",
+        "channelList": [
+          {
+            "tunnelNo": "01",
+            "channelCode": "SS",
+            "templates": [
+              {
+                "tunnelNo": "01",
+                "channelCode": "SS",
+                "template": "{\"bizId\":1320640668583985744,\"tunnelNo\":\"01\",\"tunnelName\":\"阿里短信平台\",\"tunnelUrl\":null,\"tunnelTemplateId\":\"SMWYQ001\",\"tunnelTemplateName\":\"山盟wyq-提醒领权益-短信\",\"templateNo\":\"202305311505915862\",\"templateTitle\":\"山盟wyq-提醒领权益\",\"templateContent\":\"尊敬的#name:${msg_customer_info(userId,1)}#客户，您的#equity:权益A#已到账，快去手机银行领取\",\"templateExample\":\"\",\"templateType\":\"1\",\"status\":\"0\",\"templateName\":\"山盟-提醒领权益-短信\",\"opId\":null,\"remark\":null,\"billPicUrl\":\"\",\"billLink\":\"\",\"msgRecommend\":null,\"templateMsgType\":\"0\",\"templateSummary\":\"\",\"msgText\":\"\",\"extendedParams\":null,\"channelCode\":\"SS\",\"channelName\":\"短信\",\"attachment\":null,\"signature\":null,\"templateStyle\":\"1\",\"btnText\":\"查看详情\",\"productType\":null}"
+              },
+              {
+                "tunnelNo": "01",
+                "channelCode": "SS",
+                "template": "{\"bizId\":1320640668583985742,\"tunnelNo\":\"01\",\"tunnelName\":\"阿里短信平台\",\"tunnelUrl\":null,\"tunnelTemplateId\":\"SMWYQ003\",\"tunnelTemplateName\":\"山盟wyq-通用模板-短信\",\"templateNo\":\"202305301605863216\",\"templateTitle\":\"山盟wyq-通用模板-短信\",\"templateContent\":\"#content:${conne}#\",\"templateExample\":\"\",\"templateType\":\"1\",\"status\":\"0\",\"templateName\":\"山盟-工资发放_20230530160631\",\"opId\":null,\"remark\":null,\"billPicUrl\":\"\",\"billLink\":\"\",\"msgRecommend\":null,\"templateMsgType\":\"0\",\"templateSummary\":\"\",\"msgText\":\"\",\"extendedParams\":null,\"channelCode\":\"SS\",\"channelName\":\"短信\",\"attachment\":null,\"signature\":null,\"templateStyle\":\"1\",\"btnText\":\"查看详情\",\"productType\":null}"
+              },
+              {
+                "tunnelNo": "01",
+                "channelCode": "SS",
+                "template": "{\"bizId\":1320640668583985737,\"tunnelNo\":\"01\",\"tunnelName\":\"阿里短信平台\",\"tunnelUrl\":null,\"tunnelTemplateId\":\"SMWYQ003\",\"tunnelTemplateName\":\"山盟wyq-通用模板-短信\",\"templateNo\":\"202305301305862664\",\"templateTitle\":\"山盟wyq-通用模板-短信\",\"templateContent\":\"#content:工资发放#\",\"templateExample\":\"\",\"templateType\":\"1\",\"status\":\"0\",\"templateName\":\"山盟-工资发放\",\"opId\":null,\"remark\":null,\"billPicUrl\":\"\",\"billLink\":\"\",\"msgRecommend\":null,\"templateMsgType\":\"0\",\"templateSummary\":\"\",\"msgText\":\"\",\"extendedParams\":null,\"channelCode\":\"SS\",\"channelName\":\"短信\",\"attachment\":null,\"signature\":null,\"templateStyle\":\"1\",\"btnText\":\"查看详情\",\"productType\":null}"
+              },
+              {
+                "tunnelNo": "01",
+                "channelCode": "SS",
+                "template": "{\"bizId\":1320640668583985738,\"tunnelNo\":\"01\",\"tunnelName\":\"阿里短信平台\",\"tunnelUrl\":null,\"tunnelTemplateId\":\"SMWYQ003\",\"tunnelTemplateName\":\"山盟wyq-通用模板-短信\",\"templateNo\":\"202305301305862670\",\"templateTitle\":\"山盟wyq-通用模板-短信\",\"templateContent\":\"#content:${content}#\",\"templateExample\":\"\",\"templateType\":\"1\",\"status\":\"0\",\"templateName\":\"山盟-已购买\",\"opId\":null,\"remark\":null,\"billPicUrl\":\"\",\"billLink\":\"\",\"msgRecommend\":null,\"templateMsgType\":\"0\",\"templateSummary\":\"\",\"msgText\":\"\",\"extendedParams\":null,\"channelCode\":\"SS\",\"channelName\":\"短信\",\"attachment\":null,\"signature\":null,\"templateStyle\":\"1\",\"btnText\":\"查看详情\",\"productType\":null}"
+              },
+              {
+                "tunnelNo": "01",
+                "channelCode": "SS",
+                "template": "{\"bizId\":1320640668583985739,\"tunnelNo\":\"01\",\"tunnelName\":\"阿里短信平台\",\"tunnelUrl\":null,\"tunnelTemplateId\":\"SMWYQ003\",\"tunnelTemplateName\":\"山盟wyq-通用模板-短信\",\"templateNo\":\"202305301305862676\",\"templateTitle\":\"山盟wyq-通用模板-短信\",\"templateContent\":\"#content:${content}#\",\"templateExample\":\"\",\"templateType\":\"1\",\"status\":\"0\",\"templateName\":\"山盟-未购买\",\"opId\":null,\"remark\":null,\"billPicUrl\":\"\",\"billLink\":\"\",\"msgRecommend\":null,\"templateMsgType\":\"0\",\"templateSummary\":\"\",\"msgText\":\"\",\"extendedParams\":null,\"channelCode\":\"SS\",\"channelName\":\"短信\",\"attachment\":null,\"signature\":null,\"templateStyle\":\"1\",\"btnText\":\"查看详情\",\"productType\":null}"
+              },
+              {
+                "tunnelNo": "01",
+                "channelCode": "SS",
+                "template": "{\"bizId\":1320640668583985740,\"tunnelNo\":\"01\",\"tunnelName\":\"阿里短信平台\",\"tunnelUrl\":null,\"tunnelTemplateId\":\"SMWYQ003\",\"tunnelTemplateName\":\"山盟wyq-通用模板-短信\",\"templateNo\":\"202305301405862783\",\"templateTitle\":\"山盟wyq-通用模板-短信\",\"templateContent\":\"#content:${content}#\",\"templateExample\":\"\",\"templateType\":\"1\",\"status\":\"0\",\"templateName\":\"山盟-多波次触达\",\"opId\":null,\"remark\":null,\"billPicUrl\":\"\",\"billLink\":\"\",\"msgRecommend\":null,\"templateMsgType\":\"0\",\"templateSummary\":\"\",\"msgText\":\"\",\"extendedParams\":null,\"channelCode\":\"SS\",\"channelName\":\"短信\",\"attachment\":null,\"signature\":null,\"templateStyle\":\"1\",\"btnText\":\"查看详情\",\"productType\":null}"
+              },
+              {
+                "tunnelNo": "01",
+                "channelCode": "SS",
+                "template": "{\"bizId\":1320640668583985735,\"tunnelNo\":\"01\",\"tunnelName\":\"阿里短信平台\",\"tunnelUrl\":null,\"tunnelTemplateId\":\"SMWYQ003\",\"tunnelTemplateName\":\"山盟wyq-通用模板-短信\",\"templateNo\":\"202305301205861408\",\"templateTitle\":\"山盟wyq-通用模板-短信\",\"templateContent\":\"#content:B产品#\",\"templateExample\":\"\",\"templateType\":\"1\",\"status\":\"0\",\"templateName\":\"山盟产品B短信\",\"opId\":null,\"remark\":null,\"billPicUrl\":\"\",\"billLink\":\"\",\"msgRecommend\":null,\"templateMsgType\":\"0\",\"templateSummary\":\"\",\"msgText\":\"\",\"extendedParams\":null,\"channelCode\":\"SS\",\"channelName\":\"短信\",\"attachment\":null,\"signature\":null,\"templateStyle\":\"1\",\"btnText\":\"查看详情\",\"productType\":null}"
+              },
+              {
+                "tunnelNo": "01",
+                "channelCode": "SS",
+                "template": "{\"bizId\":1320640668583985734,\"tunnelNo\":\"01\",\"tunnelName\":\"阿里短信平台\",\"tunnelUrl\":null,\"tunnelTemplateId\":\"123456\",\"tunnelTemplateName\":\"外部模板测试\",\"templateNo\":\"202305181505779346\",\"templateTitle\":\"测试短信模板lllf\",\"templateContent\":\"以下是短信内容#code:${amount}#\",\"templateExample\":\"\",\"templateType\":\"1\",\"status\":\"0\",\"templateName\":\"678\",\"opId\":null,\"remark\":null,\"billPicUrl\":\"\",\"billLink\":\"\",\"msgRecommend\":null,\"templateMsgType\":\"0\",\"templateSummary\":\"\",\"msgText\":\"\",\"extendedParams\":null,\"channelCode\":\"SS\",\"channelName\":\"短信\",\"attachment\":null,\"signature\":null,\"templateStyle\":\"1\",\"btnText\":\"查看详情\",\"productType\":null}"
+              },
+              {
+                "tunnelNo": "01",
+                "channelCode": "SS",
+                "template": "{\"bizId\":1320640668583985733,\"tunnelNo\":\"01\",\"tunnelName\":\"阿里短信平台\",\"tunnelUrl\":null,\"tunnelTemplateId\":\"123456\",\"tunnelTemplateName\":\"外部模板测试\",\"templateNo\":\"202305151405778064\",\"templateTitle\":\"测试短信模板lllf\",\"templateContent\":\"以下是短信内容\",\"templateExample\":\"\",\"templateType\":\"1\",\"status\":\"0\",\"templateName\":\"内部模板\",\"opId\":null,\"remark\":null,\"billPicUrl\":\"\",\"billLink\":\"\",\"msgRecommend\":null,\"templateMsgType\":\"0\",\"templateSummary\":\"\",\"msgText\":\"\",\"extendedParams\":null,\"channelCode\":\"SS\",\"channelName\":\"短信\",\"attachment\":null,\"signature\":null,\"templateStyle\":\"1\",\"btnText\":\"查看详情\",\"productType\":null}"
+              },
+              {
+                "tunnelNo": "01",
+                "channelCode": "SS",
+                "template": "{\"bizId\":1320640668583985494,\"tunnelNo\":\"01\",\"tunnelName\":\"阿里短信平台\",\"tunnelUrl\":null,\"tunnelTemplateId\":\"SMS_205392993\",\"tunnelTemplateName\":\"银行卡转账-转出提醒-短信\",\"templateNo\":\"7693026514181632\",\"templateTitle\":\"短信模版\",\"templateContent\":\"您向#name:${payeeAccountName}#转出#amount:${msg_amount_format(tradeAmount)}#元\",\"templateExample\":\"\",\"templateType\":\"1\",\"status\":\"0\",\"templateName\":\"银行卡转账-转出提醒-短信\",\"opId\":null,\"remark\":null,\"billPicUrl\":\"\",\"billLink\":\"\",\"msgRecommend\":null,\"templateMsgType\":\"0\",\"templateSummary\":\"\",\"msgText\":\"\",\"extendedParams\":null,\"channelCode\":\"SS\",\"channelName\":\"短信\",\"attachment\":null,\"signature\":null,\"templateStyle\":\"1\",\"btnText\":\"\",\"productType\":null}"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tunnelNo": "06",
+        "channelList": [
+          {
+            "tunnelNo": "06",
+            "channelCode": "TEST",
+            "templates": [
+              {
+                "tunnelNo": "06",
+                "channelCode": "TEST",
+                "template": "{\"bizId\":1320640668583985542,\"tunnelNo\":\"06\",\"tunnelName\":\"电子邮件\",\"tunnelUrl\":null,\"tunnelTemplateId\":\"\",\"tunnelTemplateName\":null,\"templateNo\":\"8010198456089216\",\"templateTitle\":\"邮件主题${title}\",\"templateContent\":\"<p>邮件正文：#${context}#</p>\",\"templateExample\":null,\"templateType\":\"1\",\"status\":\"0\",\"templateName\":\"测试-邮件-勿用\",\"opId\":null,\"remark\":\"\",\"billPicUrl\":\"\",\"billLink\":\"\",\"msgRecommend\":null,\"templateMsgType\":\"0\",\"templateSummary\":\"\",\"msgText\":\"\",\"extendedParams\":null,\"channelCode\":\"TEST\",\"channelName\":\"手机银行\",\"attachment\":\"[{\\\"name\\\":\\\"定时任务批量文件.txt\\\",\\\"url\\\":\\\"@staticfile/groupdev/M00/00/0F/qYYBAGJP9uWACli3AAABdpOoWNg246.txt\\\"}]\",\"signature\":\"<p>签名</p>\",\"templateStyle\":\"1\",\"btnText\":\"查看详情\",\"productType\":null}"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tunnelNo": "08",
+        "channelList": [
+          {
+            "tunnelNo": "08",
+            "channelCode": "DSB"
+          },
+          {
+            "tunnelNo": "08",
+            "channelCode": "MB",
+            "templates": [
+              {
+                "tunnelNo": "08",
+                "channelCode": "MB",
+                "template": "{\"bizId\":1320640668583985543,\"tunnelNo\":\"08\",\"tunnelName\":\"极光推送\",\"tunnelUrl\":null,\"tunnelTemplateId\":\"\",\"tunnelTemplateName\":null,\"templateNo\":\"8010200393104000\",\"templateTitle\":\"消息标题${title}\",\"templateContent\":\"消息内容${context}\",\"templateExample\":null,\"templateType\":\"1\",\"status\":\"0\",\"templateName\":\"测试-极光推送-勿用\",\"opId\":null,\"remark\":\"\",\"billPicUrl\":\"\",\"billLink\":\"\",\"msgRecommend\":null,\"templateMsgType\":\"0\",\"templateSummary\":\"\",\"msgText\":\"\",\"extendedParams\":\"{\\\"linkAddress\\\":\\\"${url}\\\",\\\"linkType\\\":\\\"3\\\",\\\"loginFlag\\\":\\\"0\\\"}\",\"channelCode\":\"MB\",\"channelName\":\"手机银行\",\"attachment\":null,\"signature\":null,\"templateStyle\":\"1\",\"btnText\":\"查看详情\",\"productType\":null}"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tunnelNo": "09",
+        "channelList": [
+          {
+            "tunnelNo": "09",
+            "channelCode": "SS",
+            "templates": [
+              {
+                "tunnelNo": "09",
+                "channelCode": "SS",
+                "template": "{\"bizId\":1320640668583985681,\"tunnelNo\":\"09\",\"tunnelName\":\"行内短信\",\"tunnelUrl\":null,\"tunnelTemplateId\":\"\",\"tunnelTemplateName\":null,\"templateNo\":\"202208101102639481\",\"templateTitle\":\"\",\"templateContent\":\"短信内容2\",\"templateExample\":\"\",\"templateType\":\"1\",\"status\":\"0\",\"templateName\":\"行内短信审核测试2_复制da1aeab\",\"opId\":null,\"remark\":null,\"billPicUrl\":\"\",\"billLink\":\"\",\"msgRecommend\":null,\"templateMsgType\":\"0\",\"templateSummary\":\"\",\"msgText\":\"\",\"extendedParams\":null,\"channelCode\":\"SS\",\"channelName\":null,\"attachment\":null,\"signature\":null,\"templateStyle\":\"1\",\"btnText\":\"查看详情\",\"productType\":null}"
+              },
+              {
+                "tunnelNo": "09",
+                "channelCode": "SS",
+                "template": "{\"bizId\":1320640668583985673,\"tunnelNo\":\"09\",\"tunnelName\":\"行内短信\",\"tunnelUrl\":null,\"tunnelTemplateId\":\"\",\"tunnelTemplateName\":null,\"templateNo\":\"202208101002639237\",\"templateTitle\":\"\",\"templateContent\":\"短信内容2\",\"templateExample\":\"\",\"templateType\":\"1\",\"status\":\"0\",\"templateName\":\"行内短信审核测试2\",\"opId\":null,\"remark\":null,\"billPicUrl\":\"\",\"billLink\":\"\",\"msgRecommend\":null,\"templateMsgType\":\"0\",\"templateSummary\":\"\",\"msgText\":\"\",\"extendedParams\":null,\"channelCode\":\"SS\",\"channelName\":null,\"attachment\":null,\"signature\":null,\"templateStyle\":\"1\",\"btnText\":\"查看详情\",\"productType\":null}"
+              },
+              {
+                "tunnelNo": "09",
+                "channelCode": "SS",
+                "template": "{\"bizId\":1320640668583985544,\"tunnelNo\":\"09\",\"tunnelName\":\"行内短信\",\"tunnelUrl\":null,\"tunnelTemplateId\":\"\",\"tunnelTemplateName\":null,\"templateNo\":\"8010201447545472\",\"templateTitle\":\"\",\"templateContent\":\"短信内容#${context}#\",\"templateExample\":null,\"templateType\":\"1\",\"status\":\"0\",\"templateName\":\"测试-行内短信-勿用\",\"opId\":null,\"remark\":\"\",\"billPicUrl\":\"\",\"billLink\":\"\",\"msgRecommend\":null,\"templateMsgType\":\"0\",\"templateSummary\":\"\",\"msgText\":\"\",\"extendedParams\":null,\"channelCode\":\"SS\",\"channelName\":null,\"attachment\":null,\"signature\":null,\"templateStyle\":\"1\",\"btnText\":\"查看详情\",\"productType\":null}"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tunnelNo": "10",
+        "channelList": [
+          {
+            "tunnelNo": "10",
+            "channelCode": "QW-MSG",
+            "templates": [
+              {
+                "tunnelNo": "10",
+                "channelCode": "QW-MSG",
+                "template":"{\"bizId\":1320640668583985719,\"tunnelNo\":\"10\",\"tunnelName\":\"企业微信\",\"tunnelUrl\":null,\"tunnelTemplateId\":\"\",\"tunnelTemplateName\":null,\"templateNo\":\"202209231504105886\",\"templateTitle\":\"银行卡转账\",\"templateContent\":\"您账户#${msg_sub_after(999999,4)}#向账户#${msg_sub_after(888888,4)}#转出\�\�\�\�#${msg_amount_format(188)}#元\�\�\",\"templateExample\":\"\",\"templateType\":\"1\",\"status\":\"0\",\"templateName\":\"MP专用-银行卡转账-企业微信_固定参数\",\"opId\":null,\"remark\":null,\"billPicUrl\":\"\",\"billLink\":\"http://qq.com\",\"msgRecommend\":null,\"templateMsgType\":\"2\",\"templateSummary\":\"\",\"msgText\":\"\",\"extendedParams\":null,\"channelCode\":\"QW-MSG\",\"channelName\":\"企微消息中心\",\"attachment\":null,\"signature\":null,\"templateStyle\":\"1\",\"btnText\":\"查看详情\",\"productType\":null}"
+              },
+              {
+                "tunnelNo": "10",
+                "channelCode": "QW-MSG",
+                "template":"{\"bizId\":1320640668583985706,\"tunnelNo\":\"10\",\"tunnelName\":\"企业微信\",\"tunnelUrl\":null,\"tunnelTemplateId\":\"\",\"tunnelTemplateName\":null,\"templateNo\":\"202209051503213688\",\"templateTitle\":\"银行卡转账\",\"templateContent\":\"您账户#${msg_sub_after(payerAccount,4)}#向账户#${msg_sub_after(payeeAccount,4)}#转出\�\�\�\�#${msg_amount_format(tradeAmount)}#元\�\�\",\"templateExample\":\"\",\"templateType\":\"1\",\"status\":\"0\",\"templateName\":\"MP专用-银行卡转账-企业微信\",\"opId\":null,\"remark\":null,\"billPicUrl\":\"\",\"billLink\":\"http://qq.com\",\"msgRecommend\":null,\"templateMsgType\":\"2\",\"templateSummary\":\"\",\"msgText\":\"\",\"extendedParams\":null,\"channelCode\":\"QW-MSG\",\"channelName\":\"企微消息中心\",\"attachment\":null,\"signature\":null,\"templateStyle\":\"1\",\"btnText\":\"查看详情\",\"productType\":null}"
+              },
+              {
+                "tunnelNo": "10",
+                "channelCode": "QW-MSG",
+                "template": "{\"bizId\":1320640668583985688,\"tunnelNo\":\"10\",\"tunnelName\":\"企业微信\",\"tunnelUrl\":null,\"tunnelTemplateId\":\"\",\"tunnelTemplateName\":null,\"templateNo\":\"202208181502964827\",\"templateTitle\":\"\",\"templateContent\":\"撒大声地看哈双抗精华ask接电话撒接口的哈克斯集合框架哈数据库的哈刷卡机的哈刷卡机和接口哈酒可视电话刷卡机华东科技撒谎大家好安吉斯柯达哈萨克建行到家卡萨华东科技哈数据打开哈萨克就德哈卡就课教案使得口诀撒华东科技哈萨克静待花开就撒华东科技啥框架的挥洒后端接口撒很快就的接口和接口撒华东科技哈萨克接电话萨克机会大双抗精华的框架撒华东科技哈看就撒华东科技撒谎的撒抠脚大汉撒旦教哈萨克接电话撒的谎看见撒的谎看见阿克汉撒抠脚大汉撒接口的哈萨克接电话卡萨华东科技ash大回馈科技撒谎雕刻机啊使得口诀哈客家话加上登记卡烧烤架和哈萨克接电话撒客家话的框架安环科撒大声地看哈双抗精华ask接电话撒接口的哈克斯集合框架哈数据库的哈刷卡机的哈刷卡机和接口哈酒可视电话刷卡机华东科技撒谎大家好安吉斯柯达哈萨克建行到家卡萨华东科技哈数据打开哈萨克就德哈卡就课教案使得口诀撒华东科技哈萨克静待花开就撒华东科技啥框架的挥洒后端接口撒很快就的接口和接口撒华东科技哈萨克接电话萨克机会大双抗精华的框架撒华东科技哈看就撒华东科技撒谎的撒抠脚大汉撒旦教哈萨克接电话撒的谎看见撒的谎看见阿克汉撒抠脚大汉撒接口的哈萨克接电话卡萨华东科技ash大回馈科技撒谎雕刻机啊使得口诀哈客家话加上登记卡烧烤架和哈萨克接电话撒客家话的框架安环科撒大声地看哈双抗精华ask接电话撒接口的哈克斯集合框架哈数据库的哈刷卡机的哈刷卡机和接口哈酒可视电话刷卡机华东科技撒谎大家好安吉斯柯达哈萨克建行到家卡萨华东科技哈数据打开哈萨克就德哈卡就课教案使得口诀撒华东科技哈萨克静待花开就撒华东科技啥框架的挥洒后端接口撒很快就的接口和接口撒华东科技哈萨克接电话萨克机会大双抗精华的框架撒华东科技哈看就撒华东科技撒谎的撒抠脚大汉撒旦教哈萨克接电话撒的谎看见撒的谎看见阿克汉撒抠脚大汉撒接口的哈萨克接电话卡萨华东科技ash大回馈科技撒谎雕刻机啊使得口诀哈客家话加上登记卡烧烤架和哈萨克接电话撒客家话的框架安环科撒大声地看哈双抗精华ask接电话撒接口的哈克斯集合框架哈数据库的哈刷卡机的哈刷卡机和接口哈酒可视电话刷卡机华东科技撒谎大家好安吉斯柯达哈萨克建行到家卡萨华东科技哈数据打开哈萨克就德哈卡就课教案使得口诀撒华东科技哈萨克静待花开就撒华东科技啥框架的挥洒后端接口撒很快就的接口和接口撒华东科技哈萨克接电话萨克机会大双抗精华的框架撒华东科技哈看就撒华东科技撒谎的撒抠脚大汉撒旦教哈萨克接电话撒的谎看见撒的谎看见阿克汉撒抠脚大汉撒接口的哈萨克接电话卡萨华东科技ash大回馈科技撒谎雕刻机啊使得口诀哈客家话加上登记卡烧烤架和哈萨克接电话撒客家话的框架安环科撒大声地看哈双抗精华ask接电话撒接口的哈克斯集合框架哈数据库的哈刷卡机的哈刷卡机和接口哈酒可视电话刷卡机华东科技撒谎大家好安吉斯柯达哈萨克建行到家卡萨华东科技哈数据打开哈萨克就德哈卡就课教案使得口诀撒华东科技哈萨克静待花开就撒华东科技啥框架的挥洒后端接口撒很快就的接口和接口撒华东科技哈萨克接电话萨克机会大双抗精华的框架撒华东科技哈看就撒华东科技撒谎的撒抠脚大汉撒旦教哈萨克接电话撒的谎看见撒的谎看见阿克汉撒抠脚大汉撒接口的哈萨克接电话卡萨华东科技ash大回馈科技撒谎雕刻机啊使得口诀哈客家话加上登记卡烧烤架和哈萨克接电话撒客家话的框架安环科撒大声地看哈双抗精华ask接电话撒接口的哈克斯集合框架哈数据库的哈刷卡机的哈刷卡机和接口哈酒可视电话刷卡机华东科技撒谎大家好安吉斯柯达哈萨克建行到家卡萨华东科技哈数据打开哈萨克就德哈卡就课教案使得口诀撒华东科技哈萨克静待花开就撒华东科技啥框架的挥洒后端接口撒很快就的接口和接口撒华东科技哈萨克接电话萨克机会大双抗精华的框架撒华东科技哈看就撒华东科技撒谎的撒抠脚大汉撒旦教哈萨克接电话撒的谎看见撒的谎看见阿克汉撒抠脚大汉撒接口的哈萨克接电话卡萨华东科技ash大回馈科技撒谎雕刻机啊使得口诀哈客家话加上登记卡烧烤架和哈萨克接电话撒客家话的框架安环科撒大声地看哈双抗精华ask接电话撒接口的哈克斯集合框架哈数据库的哈刷卡机的哈刷卡机和接口哈酒可视电话刷卡机华东科技撒谎大家好安吉斯柯达哈萨克建行到家卡萨华东科技哈数据打开哈萨克就德哈卡就课教案使得口诀撒华东科技哈萨克静待花开就撒华东科技啥框架的挥洒后端接口撒很快就的接口和接口撒华东科技哈萨克接电话萨克机会大双抗精华的框架撒华东科技哈看就撒华东科技撒谎的撒抠脚大汉撒旦教哈萨克接电话撒的谎看见撒的谎看见阿克汉撒抠脚大汉撒接口的哈萨克接电话卡萨华东科技ash大回馈科技撒谎雕刻机啊使得口诀哈客家话加上登记卡烧烤架和哈萨克接电话撒客家话的框架安环科撒大声地看哈双抗精华ask接电话撒接口的哈克斯集合框架哈数据库的哈刷卡机的哈刷卡机和接口哈酒可视电话刷卡机华东科技撒谎大家好安吉斯柯达哈萨克建行到家卡萨华东科技哈数据打开哈萨克就德哈卡就课教案使得口诀撒华东科技哈萨克静待花开就撒华东科技啥框架的挥洒后端接口撒很快就的接口和接口撒华东科技哈\",\"templateExample\":\"\",\"templateType\":\"1\",\"status\":\"0\",\"templateName\":\"企业微信\",\"opId\":null,\"remark\":null,\"billPicUrl\":\"\",\"billLink\":\"\",\"msgRecommend\":null,\"templateMsgType\":\"0\",\"templateSummary\":\"\",\"msgText\":\"\",\"extendedParams\":null,\"channelCode\":\"QW-MSG\",\"channelName\":\"企微消息中心\",\"attachment\":null,\"signature\":null,\"templateStyle\":\"1\",\"btnText\":\"查看详情\",\"productType\":null}"
+              },
+              {
+                "tunnelNo": "10",
+                "channelCode": "QW-MSG",
+                "template": "{\"bizId\":1320640668583985682,\"tunnelNo\":\"10\",\"tunnelName\":\"企业微信\",\"tunnelUrl\":null,\"tunnelTemplateId\":\"\",\"tunnelTemplateName\":null,\"templateNo\":\"202208101102639491\",\"templateTitle\":\"消息标题1\\n\",\"templateContent\":\"消息描述1\",\"templateExample\":\"\",\"templateType\":\"1\",\"status\":\"0\",\"templateName\":\"企业微信文本卡片消息审核测试1_复制ba90243\",\"opId\":null,\"remark\":null,\"billPicUrl\":\"\",\"billLink\":\"跳转链接1\",\"msgRecommend\":null,\"templateMsgType\":\"2\",\"templateSummary\":\"\",\"msgText\":\"\",\"extendedParams\":null,\"channelCode\":\"QW-MSG\",\"channelName\":\"企微消息中心\",\"attachment\":null,\"signature\":null,\"templateStyle\":\"1\",\"btnText\":\"查看详情\",\"productType\":null}"
+              },
+              {
+                "tunnelNo": "10",
+                "channelCode": "QW-MSG",
+                "template": "{\"bizId\":1320640668583985670,\"tunnelNo\":\"10\",\"tunnelName\":\"企业微信\",\"tunnelUrl\":null,\"tunnelTemplateId\":\"\",\"tunnelTemplateName\":null,\"templateNo\":\"202208101002639231\",\"templateTitle\":\"消息标题1\\n\",\"templateContent\":\"消息描述1\",\"templateExample\":\"\",\"templateType\":\"1\",\"status\":\"0\",\"templateName\":\"企业微信文本卡片消息审核测试1\",\"opId\":null,\"remark\":null,\"billPicUrl\":\"\",\"billLink\":\"跳转链接1\",\"msgRecommend\":null,\"templateMsgType\":\"2\",\"templateSummary\":\"\",\"msgText\":\"\",\"extendedParams\":null,\"channelCode\":\"QW-MSG\",\"channelName\":\"企微消息中心\",\"attachment\":null,\"signature\":null,\"templateStyle\":\"1\",\"btnText\":\"查看详情\",\"productType\":null}"
+              },
+              {
+                "tunnelNo": "10",
+                "channelCode": "QW-MSG",
+                "template": "{\"bizId\":1320640668583985671,\"tunnelNo\":\"10\",\"tunnelName\":\"企业微信\",\"tunnelUrl\":null,\"tunnelTemplateId\":\"\",\"tunnelTemplateName\":null,\"templateNo\":\"202208101002639233\",\"templateTitle\":\"消息标题1\\n\",\"templateContent\":\"消息描述1\\n\",\"templateExample\":\"\",\"templateType\":\"1\",\"status\":\"0\",\"templateName\":\"企业文本卡片消息审核测试1\",\"opId\":null,\"remark\":null,\"billPicUrl\":\"\",\"billLink\":\"跳转链接1\",\"msgRecommend\":null,\"templateMsgType\":\"2\",\"templateSummary\":\"\",\"msgText\":\"\",\"extendedParams\":null,\"channelCode\":\"QW-MSG\",\"channelName\":\"企微消息中心\",\"attachment\":null,\"signature\":null,\"templateStyle\":\"1\",\"btnText\":\"查看详情\",\"productType\":null}"
+              },
+              {
+                "tunnelNo": "10",
+                "channelCode": "QW-MSG",
+                "template": "{\"bizId\":1320640668583985621,\"tunnelNo\":\"10\",\"tunnelName\":\"企业微信\",\"tunnelUrl\":null,\"tunnelTemplateId\":\"\",\"tunnelTemplateName\":null,\"templateNo\":\"202207151601946268\",\"templateTitle\":\"多法人验证\",\"templateContent\":\"多法人企信模板测试\",\"templateExample\":\"\",\"templateType\":\"1\",\"status\":\"0\",\"templateName\":\"多法人-企信测试\",\"opId\":null,\"remark\":null,\"billPicUrl\":\"\",\"billLink\":\"http://www.baidu.com\",\"msgRecommend\":null,\"templateMsgType\":\"2\",\"templateSummary\":\"\",\"msgText\":\"\",\"extendedParams\":null,\"channelCode\":\"QW-MSG\",\"channelName\":\"企微消息中心\",\"attachment\":null,\"signature\":null,\"templateStyle\":\"1\",\"btnText\":\"查看\",\"productType\":null}"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tunnelNo": "11",
+        "channelList": [
+          {
+            "tunnelNo": "11",
+            "channelCode": "QY-YX",
+            "templates": [
+              {
+                "tunnelNo": "11",
+                "channelCode": "QY-YX",
+                "template": "{\"bizId\":1320640668583985531,\"tunnelNo\":\"11\",\"tunnelName\":\"微信小程序\",\"tunnelUrl\":null,\"tunnelTemplateId\":\"MQF45Ed3r1mFSkDWypiC9ESUaVPVwCNkjrTcK011_hk\",\"tunnelTemplateName\":\"节日祝福提醒-权益营销微信小程序\",\"templateNo\":\"7924599707776160\",\"templateTitle\":\"节日祝福提醒\",\"templateContent\":\"节日\\n#thing1:${thing1}#\\n祝福语\\n#thing2:${thing2}#\",\"templateExample\":\"\",\"templateType\":\"1\",\"status\":\"0\",\"templateName\":\"权益营销小程序消息推送\",\"opId\":null,\"remark\":\"\",\"billPicUrl\":\"\",\"billLink\":\"#${billLink}#\",\"msgRecommend\":null,\"templateMsgType\":\"0\",\"templateSummary\":\"\",\"msgText\":\"\",\"extendedParams\":null,\"channelCode\":\"QY-YX\",\"channelName\":\"权益营销\",\"attachment\":null,\"signature\":null,\"templateStyle\":\"1\",\"btnText\":\"查看详情\",\"productType\":null}"
+              },
+              {
+                "tunnelNo": "11",
+                "channelCode": "QY-YX",
+                "template": "{\"bizId\":1320640668583985699,\"tunnelNo\":\"11\",\"tunnelName\":\"微信小程序\",\"tunnelUrl\":null,\"tunnelTemplateId\":\"6EfL0dafaaLjwr4MPUmqVqJxAxhZhjZZRg2ZyM4l83s\",\"tunnelTemplateName\":\"测试-礼品领取成功通知\",\"templateNo\":\"202208291503209235\",\"templateTitle\":\"礼品领取成功通知\",\"templateContent\":\"领取结果\\n#thing1:${result}#\\n领取时间\\n#time2:${time}#\\n活动名称\\n#thing3:${name}#\",\"templateExample\":\"\",\"templateType\":\"1\",\"status\":\"0\",\"templateName\":\"礼品领取成功通知\",\"opId\":null,\"remark\":null,\"billPicUrl\":\"\",\"billLink\":\"#${bill}#\",\"msgRecommend\":null,\"templateMsgType\":\"0\",\"templateSummary\":\"\",\"msgText\":\"\",\"extendedParams\":null,\"channelCode\":\"QY-YX\",\"channelName\":\"权益营销\",\"attachment\":null,\"signature\":null,\"templateStyle\":\"1\",\"btnText\":\"查看详情\",\"productType\":null}"
+              },
+              {
+                "tunnelNo": "11",
+                "channelCode": "QY-YX",
+                "template": "{\"bizId\":1320640668583985532,\"tunnelNo\":\"11\",\"tunnelName\":\"微信小程序\",\"tunnelUrl\":null,\"tunnelTemplateId\":\"NfUBjf318Q6XRm1lg5inlwtOcH8DheY4Txr7HgHJOII\",\"tunnelTemplateName\":\"卡券发放通知-权益营销微信小程序\",\"templateNo\":\"7950862069151712\",\"templateTitle\":\"卡券发放通知\",\"templateContent\":\"卡券名称#thing6:${couponName}#\\n时间#time5:${msg_date_format(updateTime,6)}#\",\"templateExample\":null,\"templateType\":\"1\",\"status\":\"0\",\"templateName\":\"卡券发放提醒-微信小程序\",\"opId\":null,\"remark\":\"\",\"billPicUrl\":\"\",\"billLink\":\"https://weixin.qq.com/\",\"msgRecommend\":null,\"templateMsgType\":\"0\",\"templateSummary\":\"\",\"msgText\":\"\",\"extendedParams\":null,\"channelCode\":\"QY-YX\",\"channelName\":\"权益营销\",\"attachment\":null,\"signature\":null,\"templateStyle\":\"1\",\"btnText\":\"查看详情\",\"productType\":null}"
+              }
+            ]
+          },
+          {
+            "tunnelNo": "11",
+            "channelCode": "MS-WXAPP"
+          },
+          {
+            "tunnelNo": "11",
+            "channelCode": "0548",
+            "templates": [
+              {
+                "tunnelNo": "11",
+                "channelCode": "0548",
+                "template": "{\"bizId\":1320640668583985726,\"tunnelNo\":\"11\",\"tunnelName\":\"微信小程序\",\"tunnelUrl\":null,\"tunnelTemplateId\":\"eNDZn_pPAFruI57W7q_OiG9yuVszJyH86yC3EkpHF_8\",\"tunnelTemplateName\":\"小程序模板\",\"templateNo\":\"202212291005320572\",\"templateTitle\":\"交易提醒\",\"templateContent\":\"交易时间\\n#date2:20220929#\\n交易类型\\n#phrase3:转账#\",\"templateExample\":\"\",\"templateType\":\"1\",\"status\":\"0\",\"templateName\":\"小程序测试_20221229104710\",\"opId\":null,\"remark\":null,\"billPicUrl\":\"\",\"billLink\":\"https://www.baidu.com\",\"msgRecommend\":null,\"templateMsgType\":\"0\",\"templateSummary\":\"\",\"msgText\":\"\",\"extendedParams\":null,\"channelCode\":\"0548\",\"channelName\":\"远程银行\",\"attachment\":null,\"signature\":null,\"templateStyle\":\"1\",\"btnText\":\"查看详情\",\"productType\":null}"
+              },
+              {
+                "tunnelNo": "11",
+                "channelCode": "0548",
+                "template": "{\"bizId\":1320640668583985721,\"tunnelNo\":\"11\",\"tunnelName\":\"微信小程序\",\"tunnelUrl\":null,\"tunnelTemplateId\":\"eNDZn_pPAFruI57W7q_OiG9yuVszJyH86yC3EkpHF_8\",\"tunnelTemplateName\":\"小程序模板\",\"templateNo\":\"202209291704324420\",\"templateTitle\":\"交易提醒\",\"templateContent\":\"交易时间\\n#date2:20220929#\\n交易类型\\n#phrase3:转账#\",\"templateExample\":\"\",\"templateType\":\"1\",\"status\":\"0\",\"templateName\":\"小程序测试\",\"opId\":null,\"remark\":null,\"billPicUrl\":\"\",\"billLink\":\"https://www.baidu.com\",\"msgRecommend\":null,\"templateMsgType\":\"0\",\"templateSummary\":\"\",\"msgText\":\"\",\"extendedParams\":null,\"channelCode\":\"0548\",\"channelName\":\"远程银行\",\"attachment\":null,\"signature\":null,\"templateStyle\":\"1\",\"btnText\":\"查看详情\",\"productType\":null}"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tunnelNo": "12",
+        "channelList": [
+          {
+            "tunnelNo": "12",
+            "channelCode": "HW-SP",
+            "templates": [
+              {
+                "tunnelNo": "12",
+                "channelCode": "HW-SP",
+                "template": "{\"bizId\":1320640668583985554,\"tunnelNo\":\"12\",\"tunnelName\":\"华为视频消息\",\"tunnelUrl\":null,\"tunnelTemplateId\":\"VMS_22042900009\",\"tunnelTemplateName\":\"视频消息-固定参数-动账\",\"templateNo\":\"202205061800025119\",\"templateTitle\":\"视频消息固定参数演示\",\"templateContent\":\"[{\\\"frames\\\":1,\\\"text\\\":\\\"#p1:${payerAccount}#\\\"},{\\\"frames\\\":2,\\\"text\\\":\\\"#p2:${msg_date_format(tradeTime,0)}#\\\"}]\",\"templateExample\":\"\",\"templateType\":\"2\",\"status\":\"0\",\"templateName\":\"视频消息-借记卡动账-演示\",\"opId\":\"\",\"remark\":\"\",\"billPicUrl\":\"\",\"billLink\":\"\",\"msgRecommend\":\"\",\"templateMsgType\":\"0\",\"templateSummary\":\"\",\"msgText\":\"\",\"extendedParams\":\"\",\"channelCode\":\"HW-SP\",\"channelName\":\"视频消息\",\"attachment\":\"\",\"signature\":\"\",\"templateStyle\":\"1\",\"btnText\":\"查看详情\",\"productType\":null}"
+              },
+              {
+                "tunnelNo": "12",
+                "channelCode": "HW-SP",
+                "template": "{\"bizId\":1320640668583985555,\"tunnelNo\":\"12\",\"tunnelName\":\"华为视频消息\",\"tunnelUrl\":null,\"tunnelTemplateId\":\"VMS_22042800007\",\"tunnelTemplateName\":\"视频消息-静态消息-欢迎信息\",\"templateNo\":\"202205091900226859\",\"templateTitle\":\"演示视频消息标题\",\"templateContent\":\"[{\\\"frames\\\":1,\\\"text\\\":\\\"这是一个视频演示消息\\\"}]\",\"templateExample\":null,\"templateType\":\"1\",\"status\":\"0\",\"templateName\":\"视频消息-静态\",\"opId\":null,\"remark\":\"\",\"billPicUrl\":\"\",\"billLink\":\"\",\"msgRecommend\":null,\"templateMsgType\":\"0\",\"templateSummary\":\"\",\"msgText\":\"\",\"extendedParams\":null,\"channelCode\":\"HW-SP\",\"channelName\":\"视频消息\",\"attachment\":null,\"signature\":null,\"templateStyle\":\"1\",\"btnText\":\"查看详情\",\"productType\":null}"
+              },
+              {
+                "tunnelNo": "12",
+                "channelCode": "HW-SP",
+                "template": "{\"bizId\":1320640668583985556,\"tunnelNo\":\"12\",\"tunnelName\":\"华为视频消息\",\"tunnelUrl\":null,\"tunnelTemplateId\":\"VMS_22042800013\",\"tunnelTemplateName\":\"视频消息-固定参数-理财购买\",\"templateNo\":\"202205091900226870\",\"templateTitle\":\"理财购买演示\",\"templateContent\":\"[{\\\"frames\\\":1,\\\"text\\\":\\\"#p1:${cardNo}#\\\"},{\\\"frames\\\":2,\\\"text\\\":\\\"#p2:${productName}#\\\"},{\\\"frames\\\":3,\\\"text\\\":\\\"#p3:${orderAmount}#\\\"}]\",\"templateExample\":null,\"templateType\":\"1\",\"status\":\"0\",\"templateName\":\"视频消息-理财购买\",\"opId\":null,\"remark\":\"\",\"billPicUrl\":\"\",\"billLink\":\"\",\"msgRecommend\":null,\"templateMsgType\":\"0\",\"templateSummary\":\"\",\"msgText\":\"\",\"extendedParams\":null,\"channelCode\":\"HW-SP\",\"channelName\":\"视频消息\",\"attachment\":null,\"signature\":null,\"templateStyle\":\"1\",\"btnText\":\"查看详情\",\"productType\":null}"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tunnelNo": "13",
+        "channelList": [
+          {
+            "tunnelNo": "13",
+            "channelCode": "HW-5G",
+            "templates": [
+              {
+                "tunnelNo": "13",
+                "channelCode": "HW-5G",
+                "template": "{\"bizId\":1320640668583985566,\"tunnelNo\":\"13\",\"tunnelName\":\"华为5G消息\",\"tunnelUrl\":null,\"tunnelTemplateId\":\"\",\"tunnelTemplateName\":null,\"templateNo\":\"202205311001371213\",\"templateTitle\":\"\",\"templateContent\":\"这是一条测试数据\",\"templateExample\":null,\"templateType\":\"1\",\"status\":\"0\",\"templateName\":\"华为5G模板测试\",\"opId\":null,\"remark\":\"\",\"billPicUrl\":\"\",\"billLink\":\"\",\"msgRecommend\":null,\"templateMsgType\":\"1\",\"templateSummary\":\"\",\"msgText\":\"\",\"extendedParams\":null,\"channelCode\":\"HW-5G\",\"channelName\":\"5G消息\",\"attachment\":null,\"signature\":null,\"templateStyle\":\"1\",\"btnText\":\"查看详情\",\"productType\":\"1\"}"
+              },
+              {
+                "tunnelNo": "13",
+                "channelCode": "HW-5G",
+                "template": "{\"bizId\":1320640668583985567,\"tunnelNo\":\"13\",\"tunnelName\":\"华为5G消息\",\"tunnelUrl\":null,\"tunnelTemplateId\":\"\",\"tunnelTemplateName\":null,\"templateNo\":\"202205311501395902\",\"templateTitle\":\"\",\"templateContent\":\"您当前正进行转账业务，转账金额为#${msg_amount_format(tradeAmount)}#元\",\"templateExample\":null,\"templateType\":\"1\",\"status\":\"0\",\"templateName\":\"华为5G模板变量测试\",\"opId\":null,\"remark\":\"\",\"billPicUrl\":\"\",\"billLink\":\"\",\"msgRecommend\":null,\"templateMsgType\":\"1\",\"templateSummary\":\"\",\"msgText\":\"\",\"extendedParams\":null,\"channelCode\":\"HW-5G\",\"channelName\":\"5G消息\",\"attachment\":null,\"signature\":null,\"templateStyle\":\"1\",\"btnText\":\"查看详情\",\"productType\":\"1\"}"
+              },
+              {
+                "tunnelNo": "13",
+                "channelCode": "HW-5G",
+                "template": "{\"bizId\":1320640668583985575,\"tunnelNo\":\"13\",\"tunnelName\":\"华为5G消息\",\"tunnelUrl\":null,\"tunnelTemplateId\":\"\",\"tunnelTemplateName\":null,\"templateNo\":\"202206101401516890\",\"templateTitle\":\"\",\"templateContent\":\"您尾号为#${msg_sub_front(payerAccount,4)}#的账户向#${msg_sub_front(payeeAccount,4)}#账户进行转账，金额为#${msg_amount_format(tradeAmount)}#元\",\"templateExample\":null,\"templateType\":\"1\",\"status\":\"0\",\"templateName\":\"5G文本消息\",\"opId\":null,\"remark\":\"\",\"billPicUrl\":\"\",\"billLink\":\"\",\"msgRecommend\":null,\"templateMsgType\":\"1\",\"templateSummary\":\"\",\"msgText\":\"\",\"extendedParams\":null,\"channelCode\":\"HW-5G\",\"channelName\":\"5G消息\",\"attachment\":null,\"signature\":null,\"templateStyle\":\"1\",\"btnText\":\"查看详情\",\"productType\":\"2\"}"
+              },
+              {
+                "tunnelNo": "13",
+                "channelCode": "HW-5G",
+                "template": "{\"bizId\":1320640668583985576,\"tunnelNo\":\"13\",\"tunnelName\":\"华为5G消息\",\"tunnelUrl\":null,\"tunnelTemplateId\":\"\",\"tunnelTemplateName\":null,\"templateNo\":\"202206101401516898\",\"templateTitle\":\"\",\"templateContent\":\"[{\\\"data\\\":{\\\"until\\\":\\\"2099-12-31T23:59:59Z\\\",\\\"url\\\":\\\"https://conent-5g.obs.cn-north-4.myhuaweicloud.com:443/content_audit_service/chatbotId/videos/23edf935-74ea-4f1b-9417-c4af400b2e85.mp4\\\"},\\\"file-size\\\":\\\"6635708\\\",\\\"content-type\\\":\\\"video/mp4\\\",\\\"file-name\\\":\\\"理财.mp4\\\",\\\"type\\\":\\\"file\\\"}]\",\"templateExample\":null,\"templateType\":\"1\",\"status\":\"0\",\"templateName\":\"5G文件消息\",\"opId\":null,\"remark\":\"\",\"billPicUrl\":\"https://conent-5g.obs.cn-north-4.myhuaweicloud.com:443/content_audit_service/chatbotId/videos/23edf935-74ea-4f1b-9417-c4af400b2e85.mp4\",\"billLink\":\"\",\"msgRecommend\":null,\"templateMsgType\":\"2\",\"templateSummary\":\"\",\"msgText\":\"\",\"extendedParams\":null,\"channelCode\":\"HW-5G\",\"channelName\":\"5G消息\",\"attachment\":null,\"signature\":null,\"templateStyle\":\"1\",\"btnText\":\"查看详情\",\"productType\":\"2\"}"
+              },
+              {
+                "tunnelNo": "13",
+                "channelCode": "HW-5G",
+                "template": "{\"bizId\":1320640668583985577,\"tunnelNo\":\"13\",\"tunnelName\":\"华为5G消息\",\"tunnelUrl\":null,\"tunnelTemplateId\":\"\",\"tunnelTemplateName\":null,\"templateNo\":\"202206101501516917\",\"templateTitle\":\"\",\"templateContent\":\"[{\\\"imageUrl\\\":\\\"https://conent-5g.obs.cn-north-4.myhuaweicloud.com:443/content_audit_service/chatbotId/pictures/b1cf6ae6-91d4-4c34-8202-004fd7a0024f.png\\\",\\\"thumbnailUrl\\\":\\\"\\\",\\\"title\\\":\\\"端午节\\\",\\\"description\\\":\\\"中国传统节日，祝大家端口安康！\\\",\\\"suggestions\\\":[{\\\"displayText\\\":\\\"新人专享\\\",\\\"url\\\":\\\"https://dev.lbapp.cn/game/activity_area/index.html?channel=MB\\\"},{\\\"displayText\\\":\\\"每日活动\\\",\\\"url\\\":\\\"https://dev.lbapp.cn/game/game_sign_normal/index.html?acId=2022060415001970551\\\"}],\\\"index\\\":0,\\\"media\\\":[{\\\"data\\\":{\\\"until\\\":\\\"2099-12-31T23:59:59Z\\\",\\\"url\\\":\\\"https://conent-5g.obs.cn-north-4.myhuaweicloud.com:443/content_audit_service/chatbotId/pictures/b1cf6ae6-91d4-4c34-8202-004fd7a0024f.png\\\"},\\\"file-size\\\":\\\"24159\\\",\\\"content-type\\\":\\\"image/png\\\",\\\"file-name\\\":\\\"精选banner1.png\\\",\\\"type\\\":\\\"file\\\"}]},{\\\"imageUrl\\\":\\\"https://conent-5g.obs.cn-north-4.myhuaweicloud.com:443/content_audit_service/chatbotId/videos/23edf935-74ea-4f1b-9417-c4af400b2e85.mp4\\\",\\\"thumbnailUrl\\\":\\\"https://conent-5g.obs.cn-north-4.myhuaweicloud.com:443/content_audit_service/chatbotId/pictures/1171305e-05e0-4202-b71e-ef3214fbd434.jpg\\\",\\\"title\\\":\\\"中秋节\\\",\\\"description\\\":\\\"中秋节，又称祭月节、月光诞、月夕、秋节、仲秋节、拜月节、月娘节、月亮节、团圆节等，是中国民间的传统节日。\\\",\\\"suggestions\\\":[{\\\"displayText\\\":\\\"月月享好礼\\\",\\\"url\\\":\\\"https://dev.lbapp.cn/game/game_lotteryDraw/index.html?acId=7803425280438592\\\"}],\\\"index\\\":1,\\\"media\\\":[{\\\"data\\\":{\\\"until\\\":\\\"2099-12-31T23:59:59Z\\\",\\\"url\\\":\\\"https://conent-5g.obs.cn-north-4.myhuaweicloud.com:443/content_audit_service/chatbotId/videos/23edf935-74ea-4f1b-9417-c4af400b2e85.mp4\\\"},\\\"file-size\\\":\\\"6635708\\\",\\\"content-type\\\":\\\"video/mp4\\\",\\\"file-name\\\":\\\"理财.mp4\\\",\\\"type\\\":\\\"file\\\"}]}]\",\"templateExample\":null,\"templateType\":\"1\",\"status\":\"0\",\"templateName\":\"5G卡片消息\",\"opId\":null,\"remark\":\"\",\"billPicUrl\":\"\",\"billLink\":\"\",\"msgRecommend\":null,\"templateMsgType\":\"3\",\"templateSummary\":\"\",\"msgText\":\"\",\"extendedParams\":null,\"channelCode\":\"HW-5G\",\"channelName\":\"5G消息\",\"attachment\":null,\"signature\":null,\"templateStyle\":\"1\",\"btnText\":\"查看详情\",\"productType\":\"2\"}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "errorMessage": "成功",
+  "success": true
+}

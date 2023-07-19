@@ -8,11 +8,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @author guoliuqaing
  */
 @SpringBootApplication
-@MapperScan("com.lhosdp.demo.mybatisplus")
+//@MapperScan('com.lhosdp.demo.mybatisplus')
 public class DemoApplication {
-
 	public static void main(String[] args) {
+
 		SpringApplication.run(DemoApplication.class, args);
 	}
-
 }

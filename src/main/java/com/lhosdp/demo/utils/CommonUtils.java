@@ -12,8 +12,13 @@ import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.time.DateUtils;
 import org.joda.time.DateTime;
 
+import java.io.UnsupportedEncodingException;
 import java.math.BigDecimal;
+import java.net.URLDecoder;
+import java.net.URLEncoder;
+import java.sql.SQLOutput;
 import java.sql.Time;
+import java.time.LocalDateTime;
 import java.util.*;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -21,112 +26,30 @@ import java.util.stream.Collectors;
 
 public class CommonUtils {
 
-    public static void main(String[] args) throws JsonProcessingException, ParseException {
-//        String traceId = null;
-//        if(StringUtils.isEmpty(traceId)){
-//            System.out.println("执行");
-//        }else{
-//            System.out.println("不执行");
-//        }
-//        System.out.println(PeriodType.MOUTH);
-//        System.out.println(PeriodType.MOUTH.getName());
-//        System.out.println(PeriodType.MOUTH.name());
-//        List<String> sss = new ArrayList<>();
-//        sss.add("60b040b60eafaac54c6f5483");
-//        sss.add("60b040b90eafaac54c6f5484");
-//         ObjectMapper objectMapper = new ObjectMapper();
-//
-////        System.out.println(s);
-//                List<DistributionCommandDto> dtos = new ArrayList<>();
-//        DistributionCommandDto to = new DistributionCommandDto();
-//
-//        to.setStrategyId("852fasdfe4f8e48f4e84sf6e555234");
-//        to.setForABTest(true);
-//        to.setDiversionRadio(23);
-//        to.setCustomerGroup("WHITELIST");
-//        to.setCustomerGroupType("654988464");
-//        to.setCityAndBranch("");
-//        to.setIsRepeated(true);
-//        to.setStartTime(DateUtils.addDays(new Date(), 10));
-//        to.setEndTime(DateUtils.addDays(new Date(), 20));
-//        to.setPeriod("WEEK");
-//        to.setPeriodDay(5);
-//        to.setChannel("AD");
-//        to.setField("1-1-1");
-//        to.setResourceType("MENU");
-//        to.setResourceId("1234568546");
-//        DistributionCommandDto to1 = new DistributionCommandDto();
-//        to1.setStrategyId("852fasdfe4f8e48f4e84sf6e555234999");
-//        to1.setForABTest(true);
-//        to1.setDiversionRadio(23);
-//        to1.setCustomerGroup("WHITELIST");
-//        to1.setCustomerGroupType("654988464");
-//        to1.setCityAndBranch("");
-//        to1.setIsRepeated(true);
-//        to1.setStartTime(DateUtils.addDays(new Date(), 10));
-//        to1.setEndTime(DateUtils.addDays(new Date(), 20));
-//        to1.setPeriod("WEEK");
-//        to1.setPeriodDay(5);
-//        to1.setChannel("AD");
-//        to1.setField("1-1-1");
-//        to1.setResourceType("MENU");
-//        to1.setResourceId("1234568546");
-//        dtos.add(to);
-//        dtos.add(to1);
-//        String s = objectMapper.writeValueAsString(dtos);
-//        System.out.println(s);
-//        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-//        Date date = new Date();
-//        String format = simpleDateFormat.format(date);
-//        System.out.println(format);
-//        long time = date.getTime();
-//        long miao = time/1000L;
-//        long fen = miao/10L;
-//        long shi = fen/10L;
-//        System.out.println(miao);
-//        String str = "customerUserNum=3,gmtModified=2021-05-26 16:07:54,groupName=私人定制,id=1397464496800403456,importType=01,state=00";
-//        int i = HashUtil.oneByOneHash(str);
-//        int i1 = i % 100;
-//        System.out.println(i1);
-//        int i = HashUtil.oneByOneHash("CustomerUserList(id=21, customerGroupId=1397464496800403456, userName=郭果果, userId=200000001181, mobile=13311201459, sex=男, age=27, userType=游客, label=中收入人群, state=启用)");
-//        System.out.println(i);
-
-//        String nowday = DateUtil.formatDate(new Date());
-//        System.out.println(nowday);
-
-//        List<DistributionCommandDto> dtos = new ArrayList<>();
-//        DistributionCommandDto to = new DistributionCommandDto();
-//        to.setStrategyId("cba6837a-2922-4296-95e4-27309a6060b53");
-//        to.setForABTest(true);
-//        to.setDiversionRadio(23);
-//        to.setCustomerGroup("1397464496800403456");
-//        to.setCustomerGroupType("WHITELIST");
-//        to.setCityAndBranch("");
-//        to.setIsRepeated(true);
-//        to.setStartTime(DateUtils.addDays(new Date(), 10));
-//        to.setEndTime(DateUtils.addDays(new Date(), 20));
-//        to.setPeriod("WEEK");
-//        to.setPeriodDay(5);
-//        to.setChannel("AD");
-//        to.setField("1-1-1");
-//        to.setResourceType("MENU");
-//        to.setResourceId("1234568546");
-//        dtos.add(to);
+    public static void main(String[] args) throws JsonProcessingException, UnsupportedEncodingException {
+//        String str = "{\"bizId\":1320640668583985531,\"tunnelNo\":\"11\",\"tunnelName\":\"微信小程序\",\"tunnelUrl\":null,\"tunnelTemplateId\":\"MQF45Ed3r1mFSkDWypiC9ESUaVPVwCNkjrTcK011_hk\",\"tunnelTemplateName\":\"节日祝福提醒-权益营销微信小程序\",\"templateNo\":\"7924599707776160\",\"templateTitle\":\"节日祝福提醒\",\"templateContent\":\"节日 #thing1:${payerAccountName}#\\n祝福语 #thing2:${payeeAccountName}#\",\"templateExample\":null,\"templateType\":\"1\",\"status\":\"0\",\"templateName\":\"权益营销小程序消息推送\",\"opId\":null,\"remark\":\"\",\"billPicUrl\":\"\",\"billLink\":\"${linkUrl}\",\"msgRecommend\":null,\"templateMsgType\":\"0\",\"templateSummary\":\"\",\"msgText\":\"\",\"extendedParams\":null,\"channelCode\":\"QY-YX\",\"channelName\":\"权益营销\",\"attachment\":null,\"signature\":null,\"templateStyle\":\"1\",\"btnText\":\"查看详情\"}";
 //        ObjectMapper objectMapper = new ObjectMapper();
-//        String s = objectMapper.writeValueAsString(dtos);
-//        System.out.println(s);
-//
-//
-//        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-//        Date parse = simpleDateFormat.parse("2021-06-06 01:01:01");
-//        Calendar c=Calendar.getInstance();
-//        c.setTime(parse);
-//        int weekday= c.get(Calendar.DAY_OF_WEEK);
-//        System.out.println(weekday - 1);
-//        Boolean aBoolean = checkTime("2021-06-17 12:45:01");
-//        System.out.println(aBoolean);
-        bianma();
+//        MiniTemplateJson o = objectMapper.readValue(str, MiniTemplateJson.class);
+//        TemplateSaveText templateSaveText = objectMapper.readValue(str, TemplateSaveText.class);
+
+        //https://dev.lbapp.cn/game/game_sign_normal/index.html?acId=7947249369727744
+        String sr = "https://dev.lbapp.cn/game/game_sign_normal/index.html?acId=7947249369727744";
+        //String src = "{\"content\":\"测试\",\"imageUrl\":\"https://dev.lbapp.cn/fastdfs/groupfinmallpro/M00/00/00/t4YBAGI6exKAchB1AAAPt3ltXLc833.png\",\"pageUrl\":\"https://small.lbapp.cn/#/spree/receive/138IA5L90GEK/6\"}";
+        String encode = URLEncoder.encode(sr, "UTF-8");
+
+        URLDecoder.decode("https%3A%2F%2Fdev.lbapp.cn%2Fgame%2Fgame_sign_normal%2Findex.html%3FacId%3D7947249369727744");
+
+        System.out.println(encode);
+
     }
+
+/*
+
+
+
+
+
+ */
 
 //    public static void main(String[] args) throws ParseException {
 
