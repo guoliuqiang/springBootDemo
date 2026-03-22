@@ -1,10 +1,7 @@
-package com.ynet.coze.assistant.utils.Testzhuanyi;
+package com.lhosdp.imagedown;
 
 import cn.hutool.json.JSONObject;
 import cn.hutool.json.JSONUtil;
-import com.ynet.coze.assistant.dtos.newchat.ChatStreamMessage;
-import com.ynet.coze.assistant.service.channel.hiagent.hiagentdto.OutPutResult;
-import org.apache.commons.text.StringEscapeUtils;
 
 public class Test {
 
@@ -20,27 +17,27 @@ public class Test {
                 "\t\"stepType\": \"message_completed\"\n" +
                 "}";
 
-        ChatStreamMessage bean = JSONUtil.toBean(str, ChatStreamMessage.class);
-
-        String content = bean.getContent();
+//        ChatStreamMessage bean = JSONUtil.toBean(str, ChatStreamMessage.class);
+//
+//        String content = bean.getContent();
 
 //        System.out.println(content);
 
         //将字符串去转义  -- 第一层去转义
-        content = content.replaceAll("\\\"", "\"");
-
-
-        System.out.println(content);
-        Output result = JSONUtil.toBean(content, Output.class);
-        String output = result.getOutput();
-
-
-        JSONObject obj = JSONUtil.createObj();
-        //将output转换成对象
-        OutPutResult outputresult = JSONUtil.toBean(output, OutPutResult.class);
-        obj.put("output", outputresult);
-
-        System.out.println(obj.toString());
+//        content = content.replaceAll("\\\"", "\"");
+//
+//
+//        System.out.println(content);
+//        Output result = JSONUtil.toBean(content, Output.class);
+//        String output = result.getOutput();
+//
+//
+//        JSONObject obj = JSONUtil.createObj();
+//        //将output转换成对象
+//        OutPutResult outputresult = JSONUtil.toBean(output, OutPutResult.class);
+//        obj.put("output", outputresult);
+//
+//        System.out.println(obj.toString());
 
 //        Output output = JSONUtil.toBean(content, Output.class);
 //

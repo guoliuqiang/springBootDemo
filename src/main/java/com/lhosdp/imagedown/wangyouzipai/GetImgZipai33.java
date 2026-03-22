@@ -1,4 +1,4 @@
-package com.lhosdp.demo.controller.wangyouzipai;
+package com.lhosdp.imagedown.wangyouzipai;
 
 
 import cn.hutool.core.date.DateUtil;
@@ -7,6 +7,7 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+import javax.net.ssl.*;
 import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
@@ -15,6 +16,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 
 import java.nio.file.Files;
+import java.security.cert.X509Certificate;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -31,8 +33,10 @@ import java.util.List;
  */
 public class GetImgZipai33 {
 
-    public static void main(String[] args) {
-        List<String> tieList = getTieList("http://cxlye0.ydwlp.cn/2048/thread.php?fid=23");
+    public static void main(String[] args) throws Exception {
+        // 添加信任所有证书的配置
+        trustAllCertificates();
+        List<String> tieList = getTieList("https://cxlye0.ydwlp.cn/thread.php?fid=23");
 
         for (String urldetail : tieList) {
             //        //要爬取的网页地址
@@ -180,7 +184,39 @@ public class GetImgZipai33 {
     }
 
 
+    private static void trustAllCertificates() throws Exception {
+        // Create a trust manager that does not validate certificate chains
+        TrustManager[] trustAllCerts = new TrustManager[]{
+                new X509TrustManager() {
+                    @Override
+                    public X509Certificate[] getAcceptedIssuers() {
+                        return new X509Certificate[0];
+                    }
+                    @Override
+                    public void checkClientTrusted(X509Certificate[] certs, String authType) {
+                    }
+                    @Override
+                    public void checkServerTrusted(X509Certificate[] certs, String authType) {
+                    }
+                }
+        };
 
+        // Install the all-trusting trust manager
+        SSLContext sc = SSLContext.getInstance("SSL");
+        sc.init(null, trustAllCerts, new java.security.SecureRandom());
+        HttpsURLConnection.setDefaultSSLSocketFactory(sc.getSocketFactory());
+
+        // Create all-trusting host name verifier
+        HostnameVerifier allHostsValid = new HostnameVerifier() {
+            @Override
+            public boolean verify(String hostname, SSLSession session) {
+                return true;
+            }
+        };
+
+        // Install the all-trusting host verifier
+        HttpsURLConnection.setDefaultHostnameVerifier(allHostsValid);
+    }
 
 
 

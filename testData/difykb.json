@@ -1,0 +1,948 @@
+{
+  "data": [
+    {
+      "id": "38aa9d8d-4e4e-490f-8b23-2e5a2d6d6cf0",
+      "name": "\u4ea7\u54c1\u77e5\u8bc6\u5e93",
+      "description": "\u4ea7\u54c1\u8d44\u6599\u548c\u4ea7\u54c1\u6392\u884c\u699c",
+      "provider": "external",
+      "permission": "only_me",
+      "data_source_type": null,
+      "indexing_technique": null,
+      "app_count": 0,
+      "document_count": 0,
+      "word_count": 0,
+      "created_by": "62a8d017-0641-47d5-a6f7-757ed984c689",
+      "created_at": 1762138727,
+      "updated_by": null,
+      "updated_at": 1762138727,
+      "embedding_model": null,
+      "embedding_model_provider": null,
+      "embedding_available": true,
+      "retrieval_model_dict": {
+        "search_method": null,
+        "reranking_enable": null,
+        "reranking_mode": null,
+        "reranking_model": {
+          "reranking_provider_name": null,
+          "reranking_model_name": null
+        },
+        "weights": null,
+        "top_k": 3,
+        "score_threshold_enabled": false,
+        "score_threshold": 0.5
+      },
+      "tags": [],
+      "doc_form": null,
+      "external_knowledge_info": {
+        "external_knowledge_id": "21f2c07ab62611f0bd440242ac120003",
+        "external_knowledge_api_id": "65f6e8e2-bbb6-4b13-a02a-9e361997fd27",
+        "external_knowledge_api_name": "adminsit-ragflow",
+        "external_knowledge_api_endpoint": "http://192.168.152.47/api/v1/dify"
+      },
+      "external_retrieval_model": {
+        "top_k": 3,
+        "score_threshold": 0.5,
+        "score_threshold_enabled": false
+      },
+      "doc_metadata": [],
+      "built_in_field_enabled": false
+    },
+    {
+      "id": "b3a6928c-8a95-4026-8584-594cbd82a08a",
+      "name": "\u7528\u6237\u77e5\u8bc6\u5e93",
+      "description": "\u7528\u6237\u4fe1\u606f",
+      "provider": "external",
+      "permission": "only_me",
+      "data_source_type": null,
+      "indexing_technique": null,
+      "app_count": 0,
+      "document_count": 0,
+      "word_count": 0,
+      "created_by": "62a8d017-0641-47d5-a6f7-757ed984c689",
+      "created_at": 1762138726,
+      "updated_by": null,
+      "updated_at": 1762138726,
+      "embedding_model": null,
+      "embedding_model_provider": null,
+      "embedding_available": true,
+      "retrieval_model_dict": {
+        "search_method": null,
+        "reranking_enable": null,
+        "reranking_mode": null,
+        "reranking_model": {
+          "reranking_provider_name": null,
+          "reranking_model_name": null
+        },
+        "weights": null,
+        "top_k": 3,
+        "score_threshold_enabled": false,
+        "score_threshold": 0.5
+      },
+      "tags": [],
+      "doc_form": null,
+      "external_knowledge_info": {
+        "external_knowledge_id": "a48d0fd6b62611f095d70242ac120003",
+        "external_knowledge_api_id": "65f6e8e2-bbb6-4b13-a02a-9e361997fd27",
+        "external_knowledge_api_name": "adminsit-ragflow",
+        "external_knowledge_api_endpoint": "http://192.168.152.47/api/v1/dify"
+      },
+      "external_retrieval_model": {
+        "top_k": 3,
+        "score_threshold": 0.5,
+        "score_threshold_enabled": false
+      },
+      "doc_metadata": [],
+      "built_in_field_enabled": false
+    },
+    {
+      "id": "eef84554-022d-4c44-a699-cc6c01c7f64f",
+      "name": "\u4ea7\u54c1\u77e5\u8bc6\u5e931",
+      "description": null,
+      "provider": "external",
+      "permission": "only_me",
+      "data_source_type": null,
+      "indexing_technique": null,
+      "app_count": 0,
+      "document_count": 0,
+      "word_count": 0,
+      "created_by": "62a8d017-0641-47d5-a6f7-757ed984c689",
+      "created_at": 1762138726,
+      "updated_by": null,
+      "updated_at": 1762138726,
+      "embedding_model": null,
+      "embedding_model_provider": null,
+      "embedding_available": true,
+      "retrieval_model_dict": {
+        "search_method": null,
+        "reranking_enable": null,
+        "reranking_mode": null,
+        "reranking_model": {
+          "reranking_provider_name": null,
+          "reranking_model_name": null
+        },
+        "weights": null,
+        "top_k": 3,
+        "score_threshold_enabled": false,
+        "score_threshold": 0.5
+      },
+      "tags": [],
+      "doc_form": null,
+      "external_knowledge_info": {
+        "external_knowledge_id": "2487a68cb62d11f0b1410242ac120003",
+        "external_knowledge_api_id": "65f6e8e2-bbb6-4b13-a02a-9e361997fd27",
+        "external_knowledge_api_name": "adminsit-ragflow",
+        "external_knowledge_api_endpoint": "http://192.168.152.47/api/v1/dify"
+      },
+      "external_retrieval_model": {
+        "top_k": 3,
+        "score_threshold": 0.5,
+        "score_threshold_enabled": false
+      },
+      "doc_metadata": [],
+      "built_in_field_enabled": false
+    },
+    {
+      "id": "bf4ce4cf-2b6f-4816-b1cd-fa0231daafee",
+      "name": "test",
+      "description": null,
+      "provider": "external",
+      "permission": "only_me",
+      "data_source_type": null,
+      "indexing_technique": null,
+      "app_count": 0,
+      "document_count": 0,
+      "word_count": 0,
+      "created_by": "62a8d017-0641-47d5-a6f7-757ed984c689",
+      "created_at": 1762138726,
+      "updated_by": null,
+      "updated_at": 1762138726,
+      "embedding_model": null,
+      "embedding_model_provider": null,
+      "embedding_available": true,
+      "retrieval_model_dict": {
+        "search_method": null,
+        "reranking_enable": null,
+        "reranking_mode": null,
+        "reranking_model": {
+          "reranking_provider_name": null,
+          "reranking_model_name": null
+        },
+        "weights": null,
+        "top_k": 3,
+        "score_threshold_enabled": false,
+        "score_threshold": 0.5
+      },
+      "tags": [],
+      "doc_form": null,
+      "external_knowledge_info": {
+        "external_knowledge_id": "03a6538ab00811f08a3d0242ac120003",
+        "external_knowledge_api_id": "65f6e8e2-bbb6-4b13-a02a-9e361997fd27",
+        "external_knowledge_api_name": "adminsit-ragflow",
+        "external_knowledge_api_endpoint": "http://192.168.152.47/api/v1/dify"
+      },
+      "external_retrieval_model": {
+        "top_k": 3,
+        "score_threshold": 0.5,
+        "score_threshold_enabled": false
+      },
+      "doc_metadata": [],
+      "built_in_field_enabled": false
+    },
+    {
+      "id": "9cca781b-b4dd-412f-b7c1-2129220c079f",
+      "name": "\u6280\u672f\u6587\u4ef6\u77e5\u8bc6\u5e93",
+      "description": null,
+      "provider": "external",
+      "permission": "only_me",
+      "data_source_type": null,
+      "indexing_technique": null,
+      "app_count": 0,
+      "document_count": 0,
+      "word_count": 0,
+      "created_by": "62a8d017-0641-47d5-a6f7-757ed984c689",
+      "created_at": 1762138726,
+      "updated_by": null,
+      "updated_at": 1762138726,
+      "embedding_model": null,
+      "embedding_model_provider": null,
+      "embedding_available": true,
+      "retrieval_model_dict": {
+        "search_method": null,
+        "reranking_enable": null,
+        "reranking_mode": null,
+        "reranking_model": {
+          "reranking_provider_name": null,
+          "reranking_model_name": null
+        },
+        "weights": null,
+        "top_k": 3,
+        "score_threshold_enabled": false,
+        "score_threshold": 0.5
+      },
+      "tags": [],
+      "doc_form": null,
+      "external_knowledge_info": {
+        "external_knowledge_id": "5418d530b62b11f0a0940242ac120003",
+        "external_knowledge_api_id": "65f6e8e2-bbb6-4b13-a02a-9e361997fd27",
+        "external_knowledge_api_name": "adminsit-ragflow",
+        "external_knowledge_api_endpoint": "http://192.168.152.47/api/v1/dify"
+      },
+      "external_retrieval_model": {
+        "top_k": 3,
+        "score_threshold": 0.5,
+        "score_threshold_enabled": false
+      },
+      "doc_metadata": [],
+      "built_in_field_enabled": false
+    },
+    {
+      "id": "f7a460fc-03df-4eed-b634-43b9ab2bd6c1",
+      "name": "\u4f01\u4e1a\u5236\u5ea6",
+      "description": null,
+      "provider": "external",
+      "permission": "only_me",
+      "data_source_type": null,
+      "indexing_technique": null,
+      "app_count": 0,
+      "document_count": 0,
+      "word_count": 0,
+      "created_by": "62a8d017-0641-47d5-a6f7-757ed984c689",
+      "created_at": 1760943418,
+      "updated_by": null,
+      "updated_at": 1760943418,
+      "embedding_model": null,
+      "embedding_model_provider": null,
+      "embedding_available": true,
+      "retrieval_model_dict": {
+        "search_method": null,
+        "reranking_enable": null,
+        "reranking_mode": null,
+        "reranking_model": {
+          "reranking_provider_name": null,
+          "reranking_model_name": null
+        },
+        "weights": null,
+        "top_k": 3,
+        "score_threshold_enabled": false,
+        "score_threshold": 0.5
+      },
+      "tags": [],
+      "doc_form": null,
+      "external_knowledge_info": {
+        "external_knowledge_id": "df5a110cad8111f091980242ac120006",
+        "external_knowledge_api_id": "65f6e8e2-bbb6-4b13-a02a-9e361997fd27",
+        "external_knowledge_api_name": "adminsit-ragflow",
+        "external_knowledge_api_endpoint": "http://192.168.152.47/api/v1/dify"
+      },
+      "external_retrieval_model": {
+        "top_k": 3,
+        "score_threshold": 0.5,
+        "score_threshold_enabled": false
+      },
+      "doc_metadata": [],
+      "built_in_field_enabled": false
+    },
+    {
+      "id": "4f68ba55-7cdc-43f6-a12a-552b2975de47",
+      "name": "\u4fe1\u8d37",
+      "description": null,
+      "provider": "external",
+      "permission": "only_me",
+      "data_source_type": null,
+      "indexing_technique": null,
+      "app_count": 0,
+      "document_count": 0,
+      "word_count": 0,
+      "created_by": "62a8d017-0641-47d5-a6f7-757ed984c689",
+      "created_at": 1757554190,
+      "updated_by": null,
+      "updated_at": 1757554190,
+      "embedding_model": null,
+      "embedding_model_provider": null,
+      "embedding_available": true,
+      "retrieval_model_dict": {
+        "search_method": null,
+        "reranking_enable": null,
+        "reranking_mode": null,
+        "reranking_model": {
+          "reranking_provider_name": null,
+          "reranking_model_name": null
+        },
+        "weights": null,
+        "top_k": 3,
+        "score_threshold_enabled": false,
+        "score_threshold": 0.5
+      },
+      "tags": [],
+      "doc_form": null,
+      "external_knowledge_info": {
+        "external_knowledge_id": "ca7cdc528eae11f0b1f00242ac120006",
+        "external_knowledge_api_id": "65f6e8e2-bbb6-4b13-a02a-9e361997fd27",
+        "external_knowledge_api_name": "adminsit-ragflow",
+        "external_knowledge_api_endpoint": "http://192.168.152.47/api/v1/dify"
+      },
+      "external_retrieval_model": {
+        "top_k": 3,
+        "score_threshold": 0.5,
+        "score_threshold_enabled": false
+      },
+      "doc_metadata": [],
+      "built_in_field_enabled": false
+    },
+    {
+      "id": "64f97aea-8b1d-4bdd-aad9-2090d859a2ce",
+      "name": "11",
+      "description": null,
+      "provider": "external",
+      "permission": "only_me",
+      "data_source_type": null,
+      "indexing_technique": null,
+      "app_count": 0,
+      "document_count": 0,
+      "word_count": 0,
+      "created_by": "62a8d017-0641-47d5-a6f7-757ed984c689",
+      "created_at": 1757399125,
+      "updated_by": null,
+      "updated_at": 1757399125,
+      "embedding_model": null,
+      "embedding_model_provider": null,
+      "embedding_available": true,
+      "retrieval_model_dict": {
+        "search_method": null,
+        "reranking_enable": null,
+        "reranking_mode": null,
+        "reranking_model": {
+          "reranking_provider_name": null,
+          "reranking_model_name": null
+        },
+        "weights": null,
+        "top_k": 3,
+        "score_threshold_enabled": false,
+        "score_threshold": 0.5
+      },
+      "tags": [],
+      "doc_form": null,
+      "external_knowledge_info": {
+        "external_knowledge_id": "a91b42fc8d4511f087100242ac120006",
+        "external_knowledge_api_id": "65f6e8e2-bbb6-4b13-a02a-9e361997fd27",
+        "external_knowledge_api_name": "adminsit-ragflow",
+        "external_knowledge_api_endpoint": "http://192.168.152.47/api/v1/dify"
+      },
+      "external_retrieval_model": {
+        "top_k": 3,
+        "score_threshold": 0.5,
+        "score_threshold_enabled": false
+      },
+      "doc_metadata": [],
+      "built_in_field_enabled": false
+    },
+    {
+      "id": "c33b6fca-14ce-42a6-800c-f57dcfe07da8",
+      "name": "1",
+      "description": null,
+      "provider": "external",
+      "permission": "only_me",
+      "data_source_type": null,
+      "indexing_technique": null,
+      "app_count": 0,
+      "document_count": 0,
+      "word_count": 0,
+      "created_by": "62a8d017-0641-47d5-a6f7-757ed984c689",
+      "created_at": 1757398873,
+      "updated_by": null,
+      "updated_at": 1757398873,
+      "embedding_model": null,
+      "embedding_model_provider": null,
+      "embedding_available": true,
+      "retrieval_model_dict": {
+        "search_method": null,
+        "reranking_enable": null,
+        "reranking_mode": null,
+        "reranking_model": {
+          "reranking_provider_name": null,
+          "reranking_model_name": null
+        },
+        "weights": null,
+        "top_k": 3,
+        "score_threshold_enabled": false,
+        "score_threshold": 0.5
+      },
+      "tags": [],
+      "doc_form": null,
+      "external_knowledge_info": {
+        "external_knowledge_id": "18bd47788d4511f09d300242ac120006",
+        "external_knowledge_api_id": "65f6e8e2-bbb6-4b13-a02a-9e361997fd27",
+        "external_knowledge_api_name": "adminsit-ragflow",
+        "external_knowledge_api_endpoint": "http://192.168.152.47/api/v1/dify"
+      },
+      "external_retrieval_model": {
+        "top_k": 3,
+        "score_threshold": 0.5,
+        "score_threshold_enabled": false
+      },
+      "doc_metadata": [],
+      "built_in_field_enabled": false
+    },
+    {
+      "id": "8129a32e-705e-4e48-8414-85b519abed13",
+      "name": "\u6d4b\u8bd5",
+      "description": null,
+      "provider": "external",
+      "permission": "only_me",
+      "data_source_type": null,
+      "indexing_technique": null,
+      "app_count": 0,
+      "document_count": 0,
+      "word_count": 0,
+      "created_by": "62a8d017-0641-47d5-a6f7-757ed984c689",
+      "created_at": 1757382880,
+      "updated_by": null,
+      "updated_at": 1757382880,
+      "embedding_model": null,
+      "embedding_model_provider": null,
+      "embedding_available": true,
+      "retrieval_model_dict": {
+        "search_method": null,
+        "reranking_enable": null,
+        "reranking_mode": null,
+        "reranking_model": {
+          "reranking_provider_name": null,
+          "reranking_model_name": null
+        },
+        "weights": null,
+        "top_k": 3,
+        "score_threshold_enabled": false,
+        "score_threshold": 0.5
+      },
+      "tags": [],
+      "doc_form": null,
+      "external_knowledge_info": {
+        "external_knowledge_id": "e8460a288d1f11f08b860242ac120006",
+        "external_knowledge_api_id": "65f6e8e2-bbb6-4b13-a02a-9e361997fd27",
+        "external_knowledge_api_name": "adminsit-ragflow",
+        "external_knowledge_api_endpoint": "http://192.168.152.47/api/v1/dify"
+      },
+      "external_retrieval_model": {
+        "top_k": 3,
+        "score_threshold": 0.5,
+        "score_threshold_enabled": false
+      },
+      "doc_metadata": [],
+      "built_in_field_enabled": false
+    },
+    {
+      "id": "fd8bb7ae-dcbc-49cc-9537-4176199301b6",
+      "name": "\u6f14\u793a\u77e5\u8bc6\u5e93",
+      "description": null,
+      "provider": "external",
+      "permission": "only_me",
+      "data_source_type": null,
+      "indexing_technique": null,
+      "app_count": 0,
+      "document_count": 0,
+      "word_count": 0,
+      "created_by": "62a8d017-0641-47d5-a6f7-757ed984c689",
+      "created_at": 1757382198,
+      "updated_by": null,
+      "updated_at": 1757382198,
+      "embedding_model": null,
+      "embedding_model_provider": null,
+      "embedding_available": true,
+      "retrieval_model_dict": {
+        "search_method": null,
+        "reranking_enable": null,
+        "reranking_mode": null,
+        "reranking_model": {
+          "reranking_provider_name": null,
+          "reranking_model_name": null
+        },
+        "weights": null,
+        "top_k": 3,
+        "score_threshold_enabled": false,
+        "score_threshold": 0.5
+      },
+      "tags": [],
+      "doc_form": null,
+      "external_knowledge_info": {
+        "external_knowledge_id": "570044b28d1e11f0b9520242ac120006",
+        "external_knowledge_api_id": "65f6e8e2-bbb6-4b13-a02a-9e361997fd27",
+        "external_knowledge_api_name": "adminsit-ragflow",
+        "external_knowledge_api_endpoint": "http://192.168.152.47/api/v1/dify"
+      },
+      "external_retrieval_model": {
+        "top_k": 3,
+        "score_threshold": 0.5,
+        "score_threshold_enabled": false
+      },
+      "doc_metadata": [],
+      "built_in_field_enabled": false
+    },
+    {
+      "id": "3bb56247-c9ba-4f04-8e9a-1ba63786d41c",
+      "name": "\u6d4b\u8bd5103",
+      "description": null,
+      "provider": "external",
+      "permission": "only_me",
+      "data_source_type": null,
+      "indexing_technique": null,
+      "app_count": 0,
+      "document_count": 0,
+      "word_count": 0,
+      "created_by": "62a8d017-0641-47d5-a6f7-757ed984c689",
+      "created_at": 1757333166,
+      "updated_by": null,
+      "updated_at": 1757333166,
+      "embedding_model": null,
+      "embedding_model_provider": null,
+      "embedding_available": true,
+      "retrieval_model_dict": {
+        "search_method": null,
+        "reranking_enable": null,
+        "reranking_mode": null,
+        "reranking_model": {
+          "reranking_provider_name": null,
+          "reranking_model_name": null
+        },
+        "weights": null,
+        "top_k": 3,
+        "score_threshold_enabled": false,
+        "score_threshold": 0.5
+      },
+      "tags": [],
+      "doc_form": null,
+      "external_knowledge_info": {
+        "external_knowledge_id": "30d236648cac11f099090242ac120006",
+        "external_knowledge_api_id": "65f6e8e2-bbb6-4b13-a02a-9e361997fd27",
+        "external_knowledge_api_name": "adminsit-ragflow",
+        "external_knowledge_api_endpoint": "http://192.168.152.47/api/v1/dify"
+      },
+      "external_retrieval_model": {
+        "top_k": 3,
+        "score_threshold": 0.5,
+        "score_threshold_enabled": false
+      },
+      "doc_metadata": [],
+      "built_in_field_enabled": false
+    },
+    {
+      "id": "f7b77ce6-394b-4336-ab55-be9ac2843269",
+      "name": "ceshi112",
+      "description": null,
+      "provider": "external",
+      "permission": "only_me",
+      "data_source_type": null,
+      "indexing_technique": null,
+      "app_count": 0,
+      "document_count": 0,
+      "word_count": 0,
+      "created_by": "62a8d017-0641-47d5-a6f7-757ed984c689",
+      "created_at": 1757331481,
+      "updated_by": null,
+      "updated_at": 1757331481,
+      "embedding_model": null,
+      "embedding_model_provider": null,
+      "embedding_available": true,
+      "retrieval_model_dict": {
+        "search_method": null,
+        "reranking_enable": null,
+        "reranking_mode": null,
+        "reranking_model": {
+          "reranking_provider_name": null,
+          "reranking_model_name": null
+        },
+        "weights": null,
+        "top_k": 3,
+        "score_threshold_enabled": false,
+        "score_threshold": 0.5
+      },
+      "tags": [],
+      "doc_form": null,
+      "external_knowledge_info": {
+        "external_knowledge_id": "32852fb08ca811f0aa850242ac120006",
+        "external_knowledge_api_id": "65f6e8e2-bbb6-4b13-a02a-9e361997fd27",
+        "external_knowledge_api_name": "adminsit-ragflow",
+        "external_knowledge_api_endpoint": "http://192.168.152.47/api/v1/dify"
+      },
+      "external_retrieval_model": {
+        "top_k": 3,
+        "score_threshold": 0.5,
+        "score_threshold_enabled": false
+      },
+      "doc_metadata": [],
+      "built_in_field_enabled": false
+    },
+    {
+      "id": "7217173b-3e0c-483d-b8fc-282e37778810",
+      "name": "\u91d1\u5c5e\u5904\u7406\u77e5\u8bc6\u5e93",
+      "description": null,
+      "provider": "external",
+      "permission": "only_me",
+      "data_source_type": null,
+      "indexing_technique": null,
+      "app_count": 1,
+      "document_count": 0,
+      "word_count": 0,
+      "created_by": "62a8d017-0641-47d5-a6f7-757ed984c689",
+      "created_at": 1757320408,
+      "updated_by": null,
+      "updated_at": 1757320408,
+      "embedding_model": null,
+      "embedding_model_provider": null,
+      "embedding_available": true,
+      "retrieval_model_dict": {
+        "search_method": null,
+        "reranking_enable": null,
+        "reranking_mode": null,
+        "reranking_model": {
+          "reranking_provider_name": null,
+          "reranking_model_name": null
+        },
+        "weights": null,
+        "top_k": 3,
+        "score_threshold_enabled": false,
+        "score_threshold": 0.5
+      },
+      "tags": [],
+      "doc_form": null,
+      "external_knowledge_info": {
+        "external_knowledge_id": "6ab3195c8c8e11f0b3f10242ac120006",
+        "external_knowledge_api_id": "65f6e8e2-bbb6-4b13-a02a-9e361997fd27",
+        "external_knowledge_api_name": "adminsit-ragflow",
+        "external_knowledge_api_endpoint": "http://192.168.152.47/api/v1/dify"
+      },
+      "external_retrieval_model": {
+        "top_k": 3,
+        "score_threshold": 0.5,
+        "score_threshold_enabled": false
+      },
+      "doc_metadata": [],
+      "built_in_field_enabled": false
+    },
+    {
+      "id": "07ff6b4c-1570-4470-971d-83f08c40528f",
+      "name": "\u6d4b\u8bd5100",
+      "description": null,
+      "provider": "external",
+      "permission": "only_me",
+      "data_source_type": null,
+      "indexing_technique": null,
+      "app_count": 0,
+      "document_count": 0,
+      "word_count": 0,
+      "created_by": "62a8d017-0641-47d5-a6f7-757ed984c689",
+      "created_at": 1757313746,
+      "updated_by": null,
+      "updated_at": 1757313746,
+      "embedding_model": null,
+      "embedding_model_provider": null,
+      "embedding_available": true,
+      "retrieval_model_dict": {
+        "search_method": null,
+        "reranking_enable": null,
+        "reranking_mode": null,
+        "reranking_model": {
+          "reranking_provider_name": null,
+          "reranking_model_name": null
+        },
+        "weights": null,
+        "top_k": 3,
+        "score_threshold_enabled": false,
+        "score_threshold": 0.5
+      },
+      "tags": [],
+      "doc_form": null,
+      "external_knowledge_info": {
+        "external_knowledge_id": "f7e9cfec8c7e11f08ab10242ac120006",
+        "external_knowledge_api_id": "65f6e8e2-bbb6-4b13-a02a-9e361997fd27",
+        "external_knowledge_api_name": "adminsit-ragflow",
+        "external_knowledge_api_endpoint": "http://192.168.152.47/api/v1/dify"
+      },
+      "external_retrieval_model": {
+        "top_k": 3,
+        "score_threshold": 0.5,
+        "score_threshold_enabled": false
+      },
+      "doc_metadata": [],
+      "built_in_field_enabled": false
+    },
+    {
+      "id": "dddd59d8-104a-4ed0-a0f2-d396cc4e9d48",
+      "name": "SIT\u9a8c\u8bc1\u77e5\u8bc6\u5e93",
+      "description": null,
+      "provider": "external",
+      "permission": "only_me",
+      "data_source_type": null,
+      "indexing_technique": null,
+      "app_count": 1,
+      "document_count": 0,
+      "word_count": 0,
+      "created_by": "62a8d017-0641-47d5-a6f7-757ed984c689",
+      "created_at": 1756911015,
+      "updated_by": null,
+      "updated_at": 1756911015,
+      "embedding_model": null,
+      "embedding_model_provider": null,
+      "embedding_available": true,
+      "retrieval_model_dict": {
+        "search_method": null,
+        "reranking_enable": null,
+        "reranking_mode": null,
+        "reranking_model": {
+          "reranking_provider_name": null,
+          "reranking_model_name": null
+        },
+        "weights": null,
+        "top_k": 3,
+        "score_threshold_enabled": false,
+        "score_threshold": 0.5
+      },
+      "tags": [],
+      "doc_form": null,
+      "external_knowledge_info": {
+        "external_knowledge_id": "45dd2f1288d511f0b4770242ac120006",
+        "external_knowledge_api_id": "65f6e8e2-bbb6-4b13-a02a-9e361997fd27",
+        "external_knowledge_api_name": "adminsit-ragflow",
+        "external_knowledge_api_endpoint": "http://192.168.152.47/api/v1/dify"
+      },
+      "external_retrieval_model": {
+        "top_k": 3,
+        "score_threshold": 0.5,
+        "score_threshold_enabled": false
+      },
+      "doc_metadata": [],
+      "built_in_field_enabled": false
+    },
+    {
+      "id": "7910ed69-aa57-42db-b710-92d1531b483f",
+      "name": "1122",
+      "description": null,
+      "provider": "external",
+      "permission": "only_me",
+      "data_source_type": null,
+      "indexing_technique": null,
+      "app_count": 0,
+      "document_count": 0,
+      "word_count": 0,
+      "created_by": "62a8d017-0641-47d5-a6f7-757ed984c689",
+      "created_at": 1756908283,
+      "updated_by": null,
+      "updated_at": 1756908283,
+      "embedding_model": null,
+      "embedding_model_provider": null,
+      "embedding_available": true,
+      "retrieval_model_dict": {
+        "search_method": null,
+        "reranking_enable": null,
+        "reranking_mode": null,
+        "reranking_model": {
+          "reranking_provider_name": null,
+          "reranking_model_name": null
+        },
+        "weights": null,
+        "top_k": 3,
+        "score_threshold_enabled": false,
+        "score_threshold": 0.5
+      },
+      "tags": [],
+      "doc_form": null,
+      "external_knowledge_info": {
+        "external_knowledge_id": "dff01fa888ce11f0a52c0242ac120006",
+        "external_knowledge_api_id": "65f6e8e2-bbb6-4b13-a02a-9e361997fd27",
+        "external_knowledge_api_name": "adminsit-ragflow",
+        "external_knowledge_api_endpoint": "http://192.168.152.47/api/v1/dify"
+      },
+      "external_retrieval_model": {
+        "top_k": 3,
+        "score_threshold": 0.5,
+        "score_threshold_enabled": false
+      },
+      "doc_metadata": [],
+      "built_in_field_enabled": false
+    },
+    {
+      "id": "ead69104-010d-4f19-b877-6c365ecb7bbb",
+      "name": "\u624d\u597d",
+      "description": null,
+      "provider": "external",
+      "permission": "only_me",
+      "data_source_type": null,
+      "indexing_technique": null,
+      "app_count": 0,
+      "document_count": 0,
+      "word_count": 0,
+      "created_by": "62a8d017-0641-47d5-a6f7-757ed984c689",
+      "created_at": 1756907537,
+      "updated_by": null,
+      "updated_at": 1756907537,
+      "embedding_model": null,
+      "embedding_model_provider": null,
+      "embedding_available": true,
+      "retrieval_model_dict": {
+        "search_method": null,
+        "reranking_enable": null,
+        "reranking_mode": null,
+        "reranking_model": {
+          "reranking_provider_name": null,
+          "reranking_model_name": null
+        },
+        "weights": null,
+        "top_k": 3,
+        "score_threshold_enabled": false,
+        "score_threshold": 0.5
+      },
+      "tags": [],
+      "doc_form": null,
+      "external_knowledge_info": {
+        "external_knowledge_id": "23dd0e1288cd11f0a1cb0242ac120006",
+        "external_knowledge_api_id": "65f6e8e2-bbb6-4b13-a02a-9e361997fd27",
+        "external_knowledge_api_name": "adminsit-ragflow",
+        "external_knowledge_api_endpoint": "http://192.168.152.47/api/v1/dify"
+      },
+      "external_retrieval_model": {
+        "top_k": 3,
+        "score_threshold": 0.5,
+        "score_threshold_enabled": false
+      },
+      "doc_metadata": [],
+      "built_in_field_enabled": false
+    },
+    {
+      "id": "d399c69b-725a-41f8-9b3f-67e198f7aabf",
+      "name": "ceiling1",
+      "description": null,
+      "provider": "external",
+      "permission": "only_me",
+      "data_source_type": null,
+      "indexing_technique": null,
+      "app_count": 0,
+      "document_count": 0,
+      "word_count": 0,
+      "created_by": "62a8d017-0641-47d5-a6f7-757ed984c689",
+      "created_at": 1756907289,
+      "updated_by": null,
+      "updated_at": 1756907289,
+      "embedding_model": null,
+      "embedding_model_provider": null,
+      "embedding_available": true,
+      "retrieval_model_dict": {
+        "search_method": null,
+        "reranking_enable": null,
+        "reranking_mode": null,
+        "reranking_model": {
+          "reranking_provider_name": null,
+          "reranking_model_name": null
+        },
+        "weights": null,
+        "top_k": 3,
+        "score_threshold_enabled": false,
+        "score_threshold": 0.5
+      },
+      "tags": [],
+      "doc_form": null,
+      "external_knowledge_info": {
+        "external_knowledge_id": "8aa7b2ba88cc11f0a8ab0242ac120006",
+        "external_knowledge_api_id": "65f6e8e2-bbb6-4b13-a02a-9e361997fd27",
+        "external_knowledge_api_name": "adminsit-ragflow",
+        "external_knowledge_api_endpoint": "http://192.168.152.47/api/v1/dify"
+      },
+      "external_retrieval_model": {
+        "top_k": 3,
+        "score_threshold": 0.5,
+        "score_threshold_enabled": false
+      },
+      "doc_metadata": [],
+      "built_in_field_enabled": false
+    },
+    {
+      "id": "4f700e0c-4e57-4f3d-a63c-e0a902e368b7",
+      "name": "\u6d4b\u8bd51",
+      "description": null,
+      "provider": "external",
+      "permission": "only_me",
+      "data_source_type": null,
+      "indexing_technique": null,
+      "app_count": 0,
+      "document_count": 0,
+      "word_count": 0,
+      "created_by": "62a8d017-0641-47d5-a6f7-757ed984c689",
+      "created_at": 1756907227,
+      "updated_by": null,
+      "updated_at": 1756907227,
+      "embedding_model": null,
+      "embedding_model_provider": null,
+      "embedding_available": true,
+      "retrieval_model_dict": {
+        "search_method": null,
+        "reranking_enable": null,
+        "reranking_mode": null,
+        "reranking_model": {
+          "reranking_provider_name": null,
+          "reranking_model_name": null
+        },
+        "weights": null,
+        "top_k": 3,
+        "score_threshold_enabled": false,
+        "score_threshold": 0.5
+      },
+      "tags": [],
+      "doc_form": null,
+      "external_knowledge_info": {
+        "external_knowledge_id": "75d8a24088cc11f0aec90242ac120006",
+        "external_knowledge_api_id": "65f6e8e2-bbb6-4b13-a02a-9e361997fd27",
+        "external_knowledge_api_name": "adminsit-ragflow",
+        "external_knowledge_api_endpoint": "http://192.168.152.47/api/v1/dify"
+      },
+      "external_retrieval_model": {
+        "top_k": 3,
+        "score_threshold": 0.5,
+        "score_threshold_enabled": false
+      },
+      "doc_metadata": [],
+      "built_in_field_enabled": false
+    }
+  ],
+  "has_more": true,
+  "limit": 20,
+  "total": 35,
+  "page": 1
+}

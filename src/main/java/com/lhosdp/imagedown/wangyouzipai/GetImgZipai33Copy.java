@@ -1,4 +1,4 @@
-package com.lhosdp.demo.controller.wangyouzipai;
+package com.lhosdp.imagedown.wangyouzipai;
 
 
 import cn.hutool.core.date.DateUtil;

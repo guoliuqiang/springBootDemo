@@ -1,4 +1,4 @@
-package com.ynet.aioperation.web.config;
+package com.lhosdp.jwt;
 
 
 import com.auth0.jwt.JWT;
@@ -13,17 +13,15 @@ import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Map;
 
-@Service
 public class JWTUtils {
 
-    @Value("${ynet.jwt.secret:token!@#agent!@#belink}")
-    private String secret;
+    private String secret = "token!@#agent!@#belink";
 
     /*生成token*/
     public String getToken(Map<String,String> map){
         Calendar instance = Calendar.getInstance();
         //设置30分钟过期
-        instance.add(Calendar.MINUTE,3);
+        instance.add(Calendar.HOUR,2);
 
         //创建JWT builder
         JWTCreator.Builder builder = JWT.create();

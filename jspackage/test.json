@@ -1,0 +1,76 @@
+{
+  "dialogueSummary": {
+    "talkTime": "2025-03-11",
+    "talkChannel": "AI手机银行",
+    "customerScene": "理财咨询与信用卡申请",
+    "customerMood": "犹豫与不确定",
+    "conversationSummary": "客户与小易的对话主要围绕理财产品和信用卡使用展开。客户首先询问了工资到账后的理财建议，随后关注了信用卡还款和资产情况。客户表达了对理财产品选择的不确定，并询问了其他人的购买情况。最后，客户询问了美团联名信用卡的网点信息，并预约了信用卡申请。",
+    "customerWillingness": [
+      {
+        "Willingness_details": "客户对理财产品感兴趣，但不确定选择哪种产品。",
+        "Willingness_level": "中需求",
+        "holding_period": [
+          "信息不足，无法判断"
+        ],
+        "product_name": "未知",
+        "product_style": "理财",
+        "product_yield": "信息不足，无法判断"
+      }
+    ],
+    "intentDislikeTag": [
+      {
+        "risk_tag1": "信息不足，无法判断",
+        "style_tag2": "信息不足，无法判断"
+      }
+    ],
+    "reasoning_content": ""
+  },
+  "intentionAnalysis": [],
+  "todoItem": [
+    {
+      "item_name": "信用卡申请预约",
+      "item_operation": "预约",
+      "item_operator": "小易",
+      "item_time": "2025-03-12 10:00",
+      "todo_discribe_detail": "预约西小口网点申请美团联名信用卡"
+    }
+  ],
+  "intentLikeTag": [
+    "理财",
+    "信用卡"
+  ],
+  "prooutputList1": [
+    {
+      "annual_yield_3m": 0,
+      "keywords": "热搜",
+      "link": "www.belink.com",
+      "minimum_purchase": 0,
+      "product_id": "2000000002",
+      "product_name": "（财私专属）理财宝3号2021年66期个人理财",
+      "product_type": "理财",
+      "risk_level": "低风险",
+      "status": "在售",
+      "suitable_people": "车友用户"
+    },
+    {
+      "annual_yield_3m": 0,
+      "keywords": "热搜",
+      "link": "www.belink.com",
+      "minimum_purchase": 0,
+      "product_id": "2000000004",
+      "product_name": "（代发专属）理财宝2号2021年329期个人理财",
+      "product_type": "理财",
+      "risk_level": "低风险",
+      "status": "在售",
+      "suitable_people": "VIP用户"
+    }
+  ],
+  "purchasePlan": [
+    {
+      "pur_product_amount": "信息不足，无法判断",
+      "pur_product_name": "未知",
+      "pur_product_style": "理财",
+      "pur_product_time": "信息不足，无法判断"
+    }
+  ]
+}
